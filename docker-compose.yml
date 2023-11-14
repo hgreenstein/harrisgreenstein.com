@@ -1,0 +1,45 @@
+version: "3.8"
+services: 
+  postgres:
+    image: 'postgres:latest'
+    environment:
+    - POSTGRES_PASSWORD=[REDACTED]
+    volumes:
+      - ./database/database.sql:/docker-entrypoint-initdb.d/database.sql
+    networks:
+    - shared-network
+  nodejs:
+    container_name: node_server
+    restart: unless-stopped
+    image: node-js-prod:1.0.0
+    build:
+      context: ./server
+      target: production
+      dockerfile: Dockerfile
+    environment:
+      - PGUSER=postgres
+      - PGHOST=postgres
+      - PGDATABASE=postgres
+      - PGPASSWORD=[REDACTED]
+      - PGPORT=5432
+    ports:
+      - "5001:5001"
+    networks:
+      - shared-network
+
+  react:
+    container_name: react_docker
+    restart: unless-stopped
+    image: react-js-prod:1.0.0
+    stdin_open: true
+    build:
+      context: ./client
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - shared-network
+networks:
+  shared-network: {}
+

@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding-top: 65px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* match the about section background color */
+}
+
+/* Center the slide deck */
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+/* Style the centered nav bar */
+.centered-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.centered-navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.centered-navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Style the presentation title */
+.presentation-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 30px 0 10px;
+}
+
+/* Style the presentation description */
+.presentation-description {
+  font-size: 18px;
+  margin: 0 0 20px;
+}

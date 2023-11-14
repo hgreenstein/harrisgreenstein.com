@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.tsparticles {
+    z-index: 0;
+}
+@media screen and (min-width: 992px) {
+    .nav-left {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 991px) {
+    .nav-left {
+        display: flex;
+        margin-bottom: auto;
+    }
+}
+
+.nav-left-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-linked {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(1310%)
+        hue-rotate(189deg) brightness(89%) contrast(95%);
+}
+.editor-container {
+    background-color: #333;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 600px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20dvh;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: #555;
+    border-top-left-radius: 10px;
+    min-height: 40px;
+    border-top-right-radius: 10px;
+    justify-content: flex-end !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    z-index: 100 !important; /* Ensures the navbar stays above other content */
+    padding-bottom: 20px !important;
+}
+.code-navbar {
+    display: flex;
+    padding: 10px;
+    background-color: #555;
+    border-top-left-radius: 10px;
+    min-height: 40px;
+    border-top-right-radius: 10px;
+    justify-content: flex-end !important;
+}
+.button {
+    background-color: #777;
+    border: none;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #999;
+}
+
+.text-editor {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #08ff08;
+}
+
+.text-editor:focus {
+    outline: none;
+}
+.cursor-wide {
+    background-color: #08ff08;
+}
+.name-text {
+    margin-top: 5dvh;
+}
+.home-img {
+    margin-top: 5dvh;
+}
+.nav-dark {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+@media screen and (max-width: 992px) {
+    .navbar-collapse-item-light {
+        border-bottom: gray solid 2px !important;
+    }
+    .navbar-collapse-item-dark {
+        border-bottom: white solid 2px !important;
+    }
+}
+
+.navbar-collapse-item-light:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+.navbar-collapse-item-dark:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+}
+.alert{
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    margin-top: 75px;
+}
+
