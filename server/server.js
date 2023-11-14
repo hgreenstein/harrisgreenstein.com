@@ -44,6 +44,12 @@ app.post("/api/values", async (req, res) => {
     res.send({working: true});
 })
 
+app.get("/api/aboutcards/all", async (req,res) => {
+    const values = await pgClient.query("SELECT * FROM aboutcards");
+
+    res.send(values);
+});
+
 app.get('/favicon.ico', (req, res) => res.status(204));
 
 // Proxy middleware for forwarding requests to the React app server on port 3000

@@ -110,4 +110,35 @@
                                             cursorClassName: 'cursor-wide',
                                         }}
                                     />
-
+ const [values, setValues] = useState([]);
+    const [value, setValue] = useState([]);
+    const getValues = useCallback(async () => {
+        const dbValues = await axios.get('/api/values/all');
+        console.log(dbValues);
+        const dbValuesProcessed = dbValues.data.rows.map(row => row.number);
+        console.log(`Here are the values ${dbValuesProcessed}`)
+        setValues(dbValuesProcessed);
+    }, []);
+    const saveNumber = useCallback(async (event) => {
+        event.preventDefault();
+        await axios.post('/api/values', {
+            value
+        });
+        setValue("");
+        getValues();
+    }, [value, getValues]);
+    useEffect(() => {
+        getValues();
+    }, []);
+ <button onClick={getValues}>Get all numbers</button>
+                                    <div className="values">
+                                        {values.map(value => (
+                                            <div className="value">{value}</div>
+                                        ))}
+                                    </div>
+                                </div>
+                                <form className="form" onSubmit={saveNumber}>
+                                    <label>Enter your value:</label>
+                                    <input value={value} onChange={((event) => { setValue(event.target.value) })} />
+                                    <button>Submit</button>
+                                </form>:
