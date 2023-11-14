@@ -36,6 +36,8 @@ services:
       context: ./client
       target: production
       dockerfile: Dockerfile
+    volumes:
+      - ./client/src/assets/cert:/etc/nginx/certs
     ports:
       - "3000:3000"
     networks:
