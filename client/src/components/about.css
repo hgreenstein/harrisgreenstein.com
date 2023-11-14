@@ -2,6 +2,18 @@
     z-index: 2;
     font-family: 'Noto Serif Ottoman Siyaq', serif;
 }
+.about-header {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding: 10px 20px;
+    width: 40dvw;
+    background-color: #d72020;
+    margin-top: 0.5rem;
+    border-radius: 9px;
+    border: 1px solid black;
+    box-shadow: 3px 3px #333;
+}
 .about-container {
     width: 100%;
     max-width: 1296px;
@@ -37,13 +49,17 @@
     max-width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    aspect-ratio: 5/6;
     background-color: #333;
     border-radius: 9px;
     gap: 2rem;
     color: #fff;
     box-shadow: 10px 10px #111;
     border: 2px solid #ffffff26;
+}
+@media screen and (max-width: 1024px) {
+    .about-content {
+        max-width: 70dvw;
+    }
 }
 
 .about-content-regular {
@@ -56,33 +72,44 @@
 }
 
 .about-content-cornell {
-  display:flex;
-  min-height:50px;
-  width:100%;
-  flex-direction:row;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  align-items:center;
-  align-content:center;
-  background-color: rgba( 193,201,209 ,0.03);
-  padding-block: 3%;
-  padding-inline: 1rem;
-  border-bottom: 2px solid #ffffff26;
+    display: flex;
+    min-height: 50px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(193, 201, 209, 0.03);
+    padding-block: 3%;
+    padding-inline: 1rem;
+    border-bottom: 2px solid #ffffff26;
 }
 
 h5 {
     margin-bottom: 0 !important;
+    font-size: 0.9rem !important;
+    max-width: 75%;
 }
 .about-content-cornell-logo {
     max-width: 60px;
 }
 .about-content-regular {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.7rem;
 }
 .about-card-inner {
     margin-inline: 1rem;
 }
+.about-card-inner > h1 {
+    padding-bottom: 1rem;
+}
 .about-content-subtitle {
-        margin-bottom: 2rem;
-    }
+    margin-bottom: 2rem;
+}
+.about-content-list {
+    padding-left: 0;
+}
+.about-content-list > li:not(:last-child) {
+    margin-bottom: 7%;
+}

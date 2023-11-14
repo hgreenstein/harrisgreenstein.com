@@ -7,6 +7,7 @@ import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
 import AlertDismissible from './components/AlertDismissible';
 import ArchiveWebsite from './components/ArchiveWebsite';
+import AboutDev from './components/AboutDev';
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     

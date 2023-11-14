@@ -21,11 +21,22 @@ function About({ darkMode }) {
                     },
                     aboutContent: {
                         title: item.about_title,
-                        bold: item.about_bold,
-                        content: item.about_content,
+                        one: {
+                            bold: item.about_one_bold,
+                            content: item.about_one_content,
+                        },
+                        two: {
+                            bold: item.about_one_bold,
+                            content: item.about_one_content,
+                        },
+                        three: {
+                            bold: item.about_one_bold,
+                            content: item.about_one_content,
+                        },
                     },
                     personalImage: {
                         name: item.personal_image_name,
+                        side: item.personal_image_side,
                     },
                 }));
 
@@ -53,7 +64,7 @@ function About({ darkMode }) {
                 className="parallax"
                 bgClassName="dragon-scales"
             >
-                <h1> About Me </h1>
+                <h1 className="about-header"> About Me </h1>
                 {generatedCards}
             </Parallax>
         </>
