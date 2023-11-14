@@ -32,7 +32,7 @@ app.get('/api', (req, res) => {
 });
 //New API endpoint
 app.get("/api/values/all", async (req,res) => {
-    const values = await pgClient.query("SELECT * FROM random");
+    const values = await pgClient.query("SELECT * FROM values");
 
     res.send(values);
 });
@@ -48,7 +48,7 @@ app.get('/favicon.ico', (req, res) => res.status(204));
 
 // Proxy middleware for forwarding requests to the React app server on port 3000
 app.use('/', createProxyMiddleware({ 
-    target: 'http://react_docker:3000', // assuming your React server is running on this URL
+    target: 'http://react:3000', 
     changeOrigin: true,
 }));
 
