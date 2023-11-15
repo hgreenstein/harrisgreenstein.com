@@ -24,7 +24,7 @@ function App() {
                                 darkMode={darkMode}
                                 setDarkMode={setDarkMode}
                             />{' '}
-                            <About key={darkMode} darkMode={darkMode}/>
+                            <AboutDev key={darkMode} darkMode={darkMode}/>
                         </div>
                     }
                 />

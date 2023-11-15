@@ -26,12 +26,12 @@ function About({ darkMode }) {
                             content: item.about_one_content,
                         },
                         two: {
-                            bold: item.about_one_bold,
-                            content: item.about_one_content,
+                            bold: item.about_two_bold,
+                            content: item.about_two_content,
                         },
                         three: {
-                            bold: item.about_one_bold,
-                            content: item.about_one_content,
+                            bold: item.about_three_bold,
+                            content: item.about_three_content,
                         },
                     },
                     personalImage: {
