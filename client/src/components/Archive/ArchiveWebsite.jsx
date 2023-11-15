@@ -1,15 +1,15 @@
-import Image11 from "../assets/purchaseFunnel.png"; 
-import Image10 from "../assets/starlink.png"; 
-import Image9 from "../assets/semantle-logo.png"; 
-import Image8 from "../assets/catchpoint-zoom.png"; 
-import Image7 from "../assets/gifted_child_society.png"; 
-import Image6 from "../assets/tgcs_star.png"; 
-import Image5 from "../assets/logo_catchpoint.png"; 
-import Image4 from "../assets/Aspiris-logo.png"; 
-import Image3 from "../assets/Conducting_at_Lynah.jpg";
-import Image2 from "../assets/cornell-logo.png";
+import Image11 from "./assets/purchaseFunnel.png"; 
+import Image10 from "./assets/starlink.png"; 
+import Image9 from "./assets/semantle-logo.png"; 
+import Image8 from "./assets/catchpoint-zoom.png"; 
+import Image7 from "./assets/gifted_child_society.png"; 
+import Image6 from "./assets/tgcs_star.png"; 
+import Image5 from "./assets/logo_catchpoint.png"; 
+import Image4 from "./assets/Aspiris-logo.png"; 
+import Image3 from "./assets/Conducting_at_Lynah.jpg";
+import Image2 from "./assets/cornell-logo.png";
 import './archive.css'
-import Image1 from "../assets/_DSF1805.jpg";
+import Image1 from "./assets/_DSF1805.jpg";
 function ArchiveWebsite() {
     return(
     <>

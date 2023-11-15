@@ -1,13 +1,14 @@
 import React, { useState, useCallback } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import NavigationBar from './components/NavigationBar';
-import About from './components/About';
+import About from './components/About/About';
 import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
-import AlertDismissible from './components/AlertDismissible';
-import ArchiveWebsite from './components/ArchiveWebsite';
-import AboutDev from './components/AboutDev';
+import AlertDismissible from './components/Home/AlertDismissible';
+import ArchiveWebsite from './components/Archive/ArchiveWebsite';
+import AboutDev from './components/About/AboutDev';
+import Experience from './components/Experience/Experience';
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     
@@ -25,6 +26,7 @@ function App() {
                                 setDarkMode={setDarkMode}
                             />{' '}
                             <AboutDev key={darkMode} darkMode={darkMode}/>
+                            <Experience />
                         </div>
                     }
                 />

@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import './about.css';
-import Harris from '../assets/harrisGradClock.jpg';
-import CornellLogo from '../assets/cornellLogo.png';
-import Conducting from '../assets/pepBand.jpg';
+import Harris from './assets/harrisGradClock.jpg';
+import CornellLogo from './assets/cornellLogo.png';
+import Conducting from './assets/pepBand.jpg';
 function AboutCard({ darkMode, data }) {
     const logoName = data.superheading.logo;
     const logo = () => {

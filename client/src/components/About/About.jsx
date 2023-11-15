@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import AboutCard from './AboutCard';
 import './about.css';
-import DarkImage from '../assets/circuitDark.svg';
-import Image from '../assets/solidCircuit.svg';
+import DarkImage from './assets/circuitDark.svg';
+import Image from './assets/solidCircuit.svg';
 import { Parallax, Background } from 'react-parallax';
 import axios from 'axios';
 function About({ darkMode }) {

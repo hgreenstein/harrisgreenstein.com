@@ -48,7 +48,7 @@ const mockAboutCards = [
         },
         personalImage: {
             name: 'harrisConducting',
-            side: 'left',
+            side: 'right',
         },
     },
 ];

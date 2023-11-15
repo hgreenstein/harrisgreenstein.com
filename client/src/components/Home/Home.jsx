@@ -1,7 +1,7 @@
 import React, { useEffect, useCallback } from 'react';
 import Typewriter from 'typewriter-effect';
-import HarrisLight from '../assets/redOutline.png';
-import HarrisDark from '../assets/darkModeHarris.png';
+import HarrisLight from './assets/redOutline.png';
+import HarrisDark from './assets/darkModeHarris.png';
 import './home.css';
 import VaraText from './VaraText';
 import Particles from 'react-particles';

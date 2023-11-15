@@ -68,6 +68,6 @@ VALUES (
 'Innovative Feedback Integration:',
 'Introduced a voting system for music selection, boosting leadership satisfaction and team collaboration.',
 'harrisConducting',
-'left'
+'right'
 );
 
