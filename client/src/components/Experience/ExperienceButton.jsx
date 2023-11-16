@@ -1,11 +1,11 @@
 import React from 'react';
 import './experience.css';
 import CatchpointLogo from './assets/catchpointLogo.png'
-function ExperienceButton() {
+function ExperienceButton({Image}) {
     return (
         <>
             <button className="experience-button">
-                    <img src={CatchpointLogo} alt="Catchpoint Logo" className="experience-button-image"/>
+                    <img src={Image} alt="Catchpoint Logo" className="experience-button-image"/>
                     <div className="button-overlay">
                         <div className="button-overlay-content">
                         <h3>Product Manager Intern</h3>

@@ -2,16 +2,9 @@ import React from 'react';
 import './experience.css';
 import Carousel from 'react-bootstrap/Carousel';
 import ExperienceButton from './ExperienceButton';
-import ExperienceSwiperList from './ExperienceSwiperList';
-import ExperienceSwiperObject from './ExperienceSwipeObject.jsx';
+import {ExperienceAspirisObject, ExperienceCatchpointObject} from './ExperienceSwipeObject.jsx';
+import CatchpointLogo from './assets/catchpointLogo.png';
 const ExperiencePage = () => {
-    const items = ExperienceSwiperList.map((item, index) => (
-        <ExperienceSwiperObject
-            key={index}
-            className="experience-swiper-object"
-            data={item}
-        />
-    ));
     return (
         <>
             <div className="experience-container">
@@ -20,22 +13,22 @@ const ExperiencePage = () => {
                 </div>
                 <div className="experience-content-grid">
                     {/* <div class="experience-swiper-container">{items}</div> */}
-                    <Carousel data-bs-theme="dark">
-                        <Carousel.Item interval={2000}>
-                            <ExperienceSwiperObject />
+                    <Carousel data-bs-theme="dark" auto={false}>
+                        <Carousel.Item>
+                            <ExperienceAspirisObject />
                         </Carousel.Item>
-                        <Carousel.Item interval={2000}>
-                            <ExperienceSwiperObject />
+                        <Carousel.Item>
+                            <ExperienceCatchpointObject />
                         </Carousel.Item>
-                        <Carousel.Item interval={2000}>
-                            <ExperienceSwiperObject />
+                        <Carousel.Item>
+                            <ExperienceCatchpointObject />
                         </Carousel.Item>
                     </Carousel>
 
                     <div className="experience-display-content">
                         <div className="experience-buttons">
-                            <ExperienceButton />
-                            <ExperienceButton />
+                            <ExperienceButton Image={CatchpointLogo}/>
+                            <ExperienceButton Image={"https://aspiris.com/wp-content/uploads/2020/07/Aspiris-logo.png"}/>
                             <ExperienceButton />
                         </div>
                     </div>
