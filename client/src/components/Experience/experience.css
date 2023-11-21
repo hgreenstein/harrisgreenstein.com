@@ -1,14 +1,14 @@
-.%experience-container {
-  z-index: 1;
+.experience-container {
+    z-index: 1;
 }
 .experience-title {
     text-align: center;
 }
-.experience-content-grid {
-    display: grid;
-    grid-template-rows: 2.5fr 1fr;
-    width: 100%;
-    height: 90dvh;
+@media screen and (min-width: 1024px) {
+    .experience-content-grid {
+        display: grid;
+        width: 100%;
+    }
 }
 .experience-display-content {
     display: flex;
@@ -20,9 +20,20 @@
 .experience-buttons {
     width: 100%;
     height: 100%;
-    display: grid;
     justify-content: space-evenly;
     align-items: center;
+}
+@media screen and (min-width: 1024px) {
+    .experience-buttons {
+        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .experience-buttons {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .experience-button {
     border: 1px solid black;
@@ -30,6 +41,7 @@
     margin: 0.5rem 2rem;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 .experience-button-image {
     width: 100%;
@@ -59,7 +71,7 @@
 .button-overlay-content {
     padding-top: 10%;
 }
-.experience-swiper-container > div{
+.experience-swiper-container > div {
     width: 100%;
     height: 100%;
     top: 0;
@@ -108,7 +120,7 @@
 .experience-object-logo {
     max-width: 35%;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .experience-object-logo {
         max-height: 5dvh;
     }
@@ -116,7 +128,7 @@
 .experience-object-list {
     list-style-type: square;
 }
-.experience-object-list > li{
+.experience-object-list > li {
     margin-bottom: 3%;
     font-size: 1.25em;
 }
