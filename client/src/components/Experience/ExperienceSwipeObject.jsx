@@ -1,10 +1,11 @@
 import React from 'react';
 import CatchpointLogo from './assets/catchpointLogoCropped.png';
 import TGCSLogo from './assets/giftedLogo.png';
+import AspirisLogo from './assets/aspirisLogo.png';
 function ExperienceCatchpointObject() {
     return (
         <>
-            <div className="experience-object-container">
+            <div className="experience-object-container catchpoint-card">
                 <div className="experience-object-header">
                     <div className="experience-object-title">
                         <h2>Product Manager Intern</h2>
@@ -60,7 +61,7 @@ function ExperienceCatchpointObject() {
 function ExperienceAspirisObject() {
     return (
         <>
-            <div className="experience-object-container">
+            <div className="experience-object-container aspiris-card">
                 <div className="experience-object-header">
                     <div className="experience-object-title">
                         <h2>Software Engineer & Field Technician Intern</h2>
@@ -68,7 +69,7 @@ function ExperienceAspirisObject() {
                         <h7>Jun 2022 - Aug 2022</h7>
                     </div>
                     <img
-                        src="https://aspiris.com/wp-content/uploads/2020/07/Aspiris-logo.png"
+                        src={AspirisLogo}
                         alt="Aspiris Logo"
                         className="experience-object-logo"
                     />
@@ -112,7 +113,7 @@ function ExperienceAspirisObject() {
 function ExperirenceTGCSObject() {
     return (
         <>
-            <div className="experience-object-container">
+            <div className="experience-object-container tgcs-card">
                 <div className="experience-object-header">
                     <div className="experience-object-title">
                         <h2>Instructor and Head Counselor</h2>

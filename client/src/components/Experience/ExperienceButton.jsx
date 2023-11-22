@@ -1,6 +1,6 @@
 import React from 'react';
 import './experience.css';
-function ExperienceButton({ Image, onClickIndex, onClickFunction }) {
+function ExperienceButton({ Image, onClickIndex, onClickFunction, jobTitle }) {
     return (
         <>
             <button
@@ -14,8 +14,7 @@ function ExperienceButton({ Image, onClickIndex, onClickFunction }) {
                 />
                 <div className="button-overlay">
                     <div className="button-overlay-content">
-                        <h3>Product Manager Intern</h3>
-                        <p>June 2021 - August 2021</p>
+                        <h3>{jobTitle}</h3>
                     </div>
                 </div>
             </button>
