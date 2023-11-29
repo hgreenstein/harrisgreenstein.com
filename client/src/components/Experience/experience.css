@@ -5,7 +5,9 @@
     background-position: center;
     overflow: hidden;
     opacity: 0;
-    transition: background-image 0.7s ease, opacity 0.5s ease;
+    transition:
+        background-image 0.7s ease,
+        opacity 0.5s ease;
 }
 .aspiris-background {
     opacity: 1;
@@ -140,6 +142,10 @@
     .experience-object-logo {
         max-width: 35%;
     }
+    .aspiris-software-container{
+        flex-direction: row;
+        max-height: 10dvh;
+    }
 }
 @media screen and (max-width: 1024px) {
     .experience-object-logo {
@@ -148,25 +154,55 @@
     .experience-object-header {
         flex-direction: column-reverse;
     }
+    .aspiris-software-container{
+        flex-direction: column;
+        gap: 20px
+    }
+    .aspiris-software-container > img {
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 10dvh;
+        max-width: 15dvw;
+    }
 }
 .experience-object-list {
     list-style-type: square;
 }
 .experience-object-list > li {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     font-size: 1.25em;
+}
+.experience-tgcs-list {
+    list-style-type: circle;
+}
+.experience-tgcs-list > li {
+    margin-bottom: 1%;
+    font-size: 1.25rem;
 }
 .experience-object-quote {
     margin-left: 20px;
     font-weight: 400;
     font-size: 1.25rem;
 }
-.catchpoint-card{
-    background-color: #BEDDE6;
+.catchpoint-card {
+    background-color: #bedde6;
 }
 .aspiris-card {
-    background-color: #BEE6D7;
+    background-color: #bee6d7;
 }
 .tgcs-card {
-    background-color: #D6D1E6;
+    background-color: #d6d1e6;
+}
+.aspiris-software-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.salesforce-logo {
+    max-width: 120px;
+}
+.cisco-logo {
+    min-width: 100px;
+}
+.ninja-logo {
+    max-width: 350px;
 }

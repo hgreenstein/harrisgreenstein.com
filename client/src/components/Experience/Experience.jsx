@@ -12,7 +12,15 @@ import TGCSLogo from './assets/giftedLogo.png';
 import AspirisLogo from './assets/aspirisLogo.png';
 const ExperiencePage = () => {
     const [cardIndex, setCardIndex] = useState(0);
+    const [delay, setDelay] = useState(7000);
     const backgroundContainer = useRef(null);
+    const handleExperienceButton = (selectedIndex) => {
+        setDelay(null);
+        handleCardIndex(selectedIndex);
+        setTimeout(() => {
+            setDelay(7000);
+        }, 30000);
+    };
     const handleCardIndex = (selectedIndex) => {
         setCardIndex(selectedIndex);
         if (backgroundContainer.current) {
@@ -74,19 +82,19 @@ const ExperiencePage = () => {
                         <ExperienceButton
                             Image={AspirisLogo}
                             onClickIndex={0}
-                            onClickFunction={handleCardIndex}
+                            onClickFunction={handleExperienceButton}
                             jobTitle="Software Engineer and Field Technician Intern"
                         />
                         <ExperienceButton
                             Image={CatchpointLogo}
                             onClickIndex={1}
-                            onClickFunction={handleCardIndex}
+                            onClickFunction={handleExperienceButton}
                             jobTitle="Product Manager Intern"
                         />
                         <ExperienceButton
                             Image={TGCSLogo}
                             onClickIndex={2}
-                            onClickFunction={handleCardIndex}
+                            onClickFunction={handleExperienceButton}
                             jobTitle="Instructor and Head Counselor"
                         />
                     </div>
@@ -99,6 +107,7 @@ const ExperiencePage = () => {
                         activeIndex={cardIndex}
                         onSelect={handleCardIndex}
                         touch={true}
+                        interval={delay}
                     >
                         <Carousel.Item>
                             <ExperienceAspirisObject />

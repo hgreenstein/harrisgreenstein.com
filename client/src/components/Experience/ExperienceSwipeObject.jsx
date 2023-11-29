@@ -90,22 +90,12 @@ function ExperienceAspirisObject() {
                         Management dashboard and alert package{' '}
                     </li>
                 </ul>
-                <h4 className="experience-object-quote">
-                    <i>
-                        "Through meetings with our customer success, sales, and
-                        engineering teams, and hearing feedback from customers
-                        who requested this feature, I was able to give a much
-                        more refined problem and solution definition that I knew
-                        better aligned with the potential future users of this
-                        feature...The highlight of my time here was getting to
-                        work with so many amazing teams of people from all areas
-                        of the company to develop such a feature."{' '}
-                        <a href="https://www.catchpoint.com/blog/celebrating-the-amazing-work-of-our-2021-interns">
-                            {' '}
-                            - 2021 Catchpoint Intern Blog{' '}
-                        </a>
-                    </i>
-                </h4>
+                <h3>Software Used Includes:</h3>
+                <div className ="aspiris-software-container">
+                    <img className = "salesforce-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" />
+                    <img className = "cisco-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" />
+                    <img className= "ninja-logo" src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/324418/ninjaOne-logo.png" />
+                </div>
             </div>
         </>
     );
@@ -118,7 +108,7 @@ function ExperirenceTGCSObject() {
                     <div className="experience-object-title">
                         <h2>Instructor and Head Counselor</h2>
                         <h4>The Gifted Child Society</h4>
-                        <h7>June 2017 - Jan 2021</h7>
+                        <h6>June 2017 - Jan 2021</h6>
                     </div>
                     <img
                         src={TGCSLogo}
@@ -128,37 +118,22 @@ function ExperirenceTGCSObject() {
                 </div>
                 <ul className="experience-object-list">
                     <li>
-                        Engineered a solution using RESTful APIs to consolidate
-                        data across platforms for accurate billing and cost
-                        savings
+                        <h6>Instructor</h6>
+                        <ul className="experience-tgcs-list">
+                           <li>Taught classes for gifted children grades K-8 during the summer and weekends during the school year</li>
+                           <li>Created original curricula in <i>Python, Java, 3D Modeling, Stock Market, Chess, and Rubik’s Cube solving</i></li>
+                           <li>Adapted curricula for online learning environment during pandemic, supervised assistants, and provided graded feedback</li> 
+                        </ul>
                     </li>
                     <li>
-                        Provided on-site tech support and repairs on PCs,
-                        servers, networking equipment, printers, and software
-                        upgrades{' '}
-                    </li>
-                    <li>
-                        Led trial and testing of Security Information and Event
-                        Management dashboard and alert package{' '}
+                        <h6>Head Counselor</h6>
+                       <ul className="experience-tgcs-list">
+                            <li>Supervised team of counselors, chaperoned and supervised up to 15 gifted and talented children through STEM workshops</li>
+                            <li>Acted as liaison between supporting counselors and camp directors by communicating issues and resolving disputes</li>
+                        </ul>     
                     </li>
                 </ul>
-                <h4 className="experience-object-quote">
-                    <i>
-                        "Through meetings with our customer success, sales, and
-                        engineering teams, and hearing feedback from customers
-                        who requested this feature, I was able to give a much
-                        more refined problem and solution definition that I knew
-                        better aligned with the potential future users of this
-                        feature...The highlight of my time here was getting to
-                        work with so many amazing teams of people from all areas
-                        of the company to develop such a feature."{' '}
-                        <a href="https://www.catchpoint.com/blog/celebrating-the-amazing-work-of-our-2021-interns">
-                            {' '}
-                            - 2021 Catchpoint Intern Blog{' '}
-                        </a>
-                    </i>
-                </h4>
-            </div>
+                           </div>
         </>
     );
 }
