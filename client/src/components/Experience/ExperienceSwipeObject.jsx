@@ -1,7 +1,8 @@
 import React from 'react';
 import CatchpointLogo from './assets/catchpointLogoCropped.png';
-import TGCSLogo from './assets/giftedLogo.png';
-import AspirisLogo from './assets/aspirisLogo.png';
+import TGCSLogo from './assets/giftedLogoTransparent.png';
+import AspirisLogo from './assets/aspirisLogoTransparent.png';
+import LiongardLogo from './assets/liongardLogo.png';
 function ExperienceCatchpointObject() {
     return (
         <>
@@ -10,7 +11,7 @@ function ExperienceCatchpointObject() {
                     <div className="experience-object-title">
                         <h2>Product Manager Intern</h2>
                         <h4>Catchpoint Systems Inc.</h4>
-                        <h7>Jun 2021 - Aug 2021</h7>
+                        <h6>Jun 2021 - Aug 2021</h6>
                     </div>
                     <img
                         src={CatchpointLogo}
@@ -66,7 +67,7 @@ function ExperienceAspirisObject() {
                     <div className="experience-object-title">
                         <h2>Software Engineer & Field Technician Intern</h2>
                         <h4>Aspiris IT Solutions</h4>
-                        <h7>Jun 2022 - Aug 2022</h7>
+                        <h6>Jun 2022 - Aug 2022</h6>
                     </div>
                     <img
                         src={AspirisLogo}
@@ -95,6 +96,7 @@ function ExperienceAspirisObject() {
                     <img className = "salesforce-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" />
                     <img className = "cisco-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" />
                     <img className= "ninja-logo" src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/324418/ninjaOne-logo.png" />
+                    <img className="liongard-logo" src={LiongardLogo} />
                 </div>
             </div>
         </>

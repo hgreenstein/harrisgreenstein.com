@@ -8,8 +8,9 @@ import {
     ExperirenceTGCSObject,
 } from './ExperienceSwipeObject.jsx';
 import CatchpointLogo from './assets/catchpointLogoCropped.png';
-import TGCSLogo from './assets/giftedLogo.png';
-import AspirisLogo from './assets/aspirisLogo.png';
+import TGCSLogo from './assets/giftedLogoTransparent.png';
+import AspirisLogo from './assets/aspirisLogoTransparent.png';
+import Resume from './assets/Harris_Greenstein_Resume.pdf';
 const ExperiencePage = () => {
     const [cardIndex, setCardIndex] = useState(0);
     const [delay, setDelay] = useState(7000);
@@ -119,6 +120,11 @@ const ExperiencePage = () => {
                             <ExperirenceTGCSObject />
                         </Carousel.Item>
                     </Carousel>
+                </div>
+                <div className="resume-button-container">
+                    <a href={Resume} target="_blank" className="resume-button">
+                        View My Resume Here
+                    </a>
                 </div>
             </div>
         </>

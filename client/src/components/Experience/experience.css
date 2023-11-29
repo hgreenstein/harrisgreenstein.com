@@ -144,7 +144,13 @@
     }
     .aspiris-software-container{
         flex-direction: row;
+        margin-top: 40px;
         max-height: 10dvh;
+        gap: 40px;
+    }
+    .aspiris-software-container > img {
+        min-width: 10dvw;
+        max-width: 20dvw;
     }
 }
 @media screen and (max-width: 1024px) {
@@ -161,8 +167,8 @@
     .aspiris-software-container > img {
         margin-right: auto;
         margin-left: auto;
-        max-height: 10dvh;
-        max-width: 15dvw;
+        max-height: 15dvh;
+        max-width: 20dvw;
     }
 }
 .experience-object-list {
@@ -195,14 +201,23 @@
 }
 .aspiris-software-container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
-.salesforce-logo {
-    max-width: 120px;
+.resume-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
-.cisco-logo {
-    min-width: 100px;
-}
-.ninja-logo {
-    max-width: 350px;
+.resume-button {
+    background-color: #4caf50;
+    padding: 8px 12px;
+    color: #efefef;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 30%;
+    text-align: center;
+    height: 22.5%;
 }

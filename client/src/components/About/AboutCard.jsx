@@ -3,6 +3,7 @@ import './about.css';
 import Harris from './assets/harrisGradClock.jpg';
 import CornellLogo from './assets/cornellLogo.png';
 import Conducting from './assets/pepBand.jpg';
+import Marching from './assets/harrisMarchingCropped.jpg'
 function AboutCard({ darkMode, data }) {
     const logoName = data.superheading.logo;
     const logo = () => {
@@ -21,7 +22,7 @@ function AboutCard({ darkMode, data }) {
             return Conducting;
         }
         else {
-            return Harris;
+            return Marching;
         }
     };
     const imageVar = image();
@@ -31,7 +32,7 @@ function AboutCard({ darkMode, data }) {
         <>
             <div className="about-container">
                 <div className="about-content-grid">
-                    {imageSide && <img src={imageVar} className="about-img" />}
+                    {imageSide && <img src={imageVar} className="about-img left-img" />}
                     <div className="about-content">
                         <div className="about-content-cornell">
                             <h5>

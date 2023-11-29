@@ -9,6 +9,7 @@ import AlertDismissible from './components/Home/AlertDismissible';
 import ArchiveWebsite from './components/Archive/ArchiveWebsite';
 import AboutDev from './components/About/AboutDev';
 import Experience from './components/Experience/Experience';
+import Footer from './components/footer';
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     
@@ -27,6 +28,7 @@ function App() {
                             />{' '}
                             <AboutDev key={darkMode} darkMode={darkMode}/>
                             <Experience />
+                            <Footer />
                         </div>
                     }
                 />

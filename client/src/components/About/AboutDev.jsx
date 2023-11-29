@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import AboutCard from './AboutCard';
 import './about.css';
-import DarkImage from './assets/circuitDark.svg';
-import Image from './assets/solidCircuit.svg';
+import DarkImage from './assets/circuitDarkExtraLarge.svg';
+import Image from './assets/solidCircuitExtraLarge.svg';
 import { Parallax } from 'react-parallax';
 import mockAboutCards from './mockAboutCards'; // Importing mock data
 

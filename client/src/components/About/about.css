@@ -60,6 +60,9 @@
     .about-content {
         max-width: 70dvw;
     }
+    .left-img{
+        order: 2;
+    }
 }
 
 .about-content-regular {
