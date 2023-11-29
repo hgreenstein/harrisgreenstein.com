@@ -3,6 +3,9 @@ import CatchpointLogo from './assets/catchpointLogoCropped.png';
 import TGCSLogo from './assets/giftedLogoTransparent.png';
 import AspirisLogo from './assets/aspirisLogoTransparent.png';
 import LiongardLogo from './assets/liongardLogo.png';
+import SalesforceLogo from './assets/salesforceLogo.svg';
+import NinjaLogo from './assets/ninjaOneLogo.png';
+import CiscoLogo from './assets/ciscoLogo.svg';
 function ExperienceCatchpointObject() {
     return (
         <>
@@ -93,9 +96,9 @@ function ExperienceAspirisObject() {
                 </ul>
                 <h3>Software Used Includes:</h3>
                 <div className ="aspiris-software-container">
-                    <img className = "salesforce-logo" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" />
-                    <img className = "cisco-logo" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Cisco_logo.svg" />
-                    <img className= "ninja-logo" src="https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/324418/ninjaOne-logo.png" />
+                    <img className = "salesforce-logo" src={SalesforceLogo}/>
+                    <img className = "cisco-logo" src={CiscoLogo}/>
+                    <img className= "ninja-logo" src={NinjaLogo}/>
                     <img className="liongard-logo" src={LiongardLogo} />
                 </div>
             </div>
