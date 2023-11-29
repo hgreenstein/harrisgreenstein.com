@@ -30,7 +30,7 @@ function AboutCard({ darkMode, data }) {
     const imageSide = data.personalImage.side === 'left' ? true : false;
     return (
         <>
-            <div className="about-container">
+            <div className="about-container" id={imageName === 'harrisConducting' ? 'leadership' : undefined}>
                 <div className="about-content-grid">
                     {imageSide && <img src={imageVar} className="about-img left-img" />}
                     <div className="about-content">

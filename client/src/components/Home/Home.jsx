@@ -7,6 +7,9 @@ import VaraText from './VaraText';
 import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
 import AlertDismissible from './AlertDismissible';
+import HarrisConducting from '../About/assets/pepBand.jpg';
+import HandleNavigation from '../../handleNavigation.js';
+import TGCSStar from './assets/tgcsStar.png'
 function Home({ darkMode }) {
     let varaCounter = 0;
     const particlesInit = useCallback(async (engine) => {
@@ -148,22 +151,20 @@ function Home({ darkMode }) {
 
                             <div className="home-latest-picks lg:order-last lg:pb-20 lg:col-span-3">
                                 <p className="home-latest-picks-title">
-                                    ⚡️ Latest Picks
+                                    🔗 Quick Links
                                 </p>
                                 <div className="home-latest-picks-container">
                                     <div className="home-latest-picks-list">
                                         <div className="home-latest-pick-item">
                                             <img
                                                 className="home-latest-pick-image"
-                                                src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/thumbnail-1.png"
+                                                src={TGCSStar}
                                                 alt=""
                                             />
                                             <p className="home-latest-pick-description">
-                                                <a href="#" title="">
-                                                    How a visual artist
-                                                    redefines success in graphic
-                                                    design
-                                                    <span className="home-latest-pick-span"></span>
+                                                <a href="#" title="" onClick={HandleNavigation}>
+                                                    Find out about my exciting internship experience & view my full resume 
+                                                    <span className="home-latest-pick-span" href="#background-container"></span>
                                                 </a>
                                             </p>
                                         </div>
@@ -172,15 +173,13 @@ function Home({ darkMode }) {
                                         <div className="home-latest-pick-item">
                                             <img
                                                 className="home-latest-pick-image"
-                                                src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/hero/1/thumbnail-1.png"
+                                                src={HarrisConducting}
                                                 alt=""
                                             />
                                             <p className="home-latest-pick-description">
-                                                <a href="#" title="">
-                                                    How a visual artist
-                                                    redefines success in graphic
-                                                    design
-                                                    <span className="home-latest-pick-span"></span>
+                                                <a href ="#about" onClick={HandleNavigation} title="">
+                                                    Learn about my time as conductor of the Big Red Pep Band!
+                                                    <span className="home-latest-pick-span" href="#leadership" ></span>
                                                 </a>
                                             </p>
                                         </div>
