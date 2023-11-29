@@ -33,7 +33,7 @@ function About({ darkMode }) {
                 className="parallax"
                 bgClassName="dragon-scales"
             >
-                <h1 className="about-header"> About Me </h1>
+                <h1 className="about-header" id="about"> About Me </h1>
                 {generatedCards}
             </Parallax>
         </>

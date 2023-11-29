@@ -64,9 +64,7 @@ function About({ darkMode }) {
                 className="parallax"
                 bgClassName="dragon-scales"
             >
-                <div className="about-header-container" id="about-header">
-                    <h1 className="about-header"> About Me </h1>
-                </div>
+                <h1 className="about-header" id="about"> About Me </h1>
                 {generatedCards}
             </Parallax>
         </>

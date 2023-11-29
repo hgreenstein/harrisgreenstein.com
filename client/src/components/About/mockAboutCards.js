@@ -76,9 +76,8 @@ const mockAboutCards = [
                     'During my time in Marching Band, I served in a variety of roles from Drum Major to show committee chair designing formations and choosing music, to section leader and librarian.',
             },
             three: {
-                bold: 'Another Bold Point Here',
-                content:
-                    'Introduced a voting system for music selection, boosting leadership satisfaction and team collaboration.',
+                bold: 'World Class Performances:',
+                content: 'From Madison Square Garden and 5th Avenue to Main Street Disney World and all 8 Ivy League Schools, I brought school spirit and cheer all over the Northeast',
             },
         },
         personalImage: {

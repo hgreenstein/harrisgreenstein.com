@@ -68,6 +68,32 @@ VALUES (
 'Innovative Feedback Integration:',
 'Introduced a voting system for music selection, boosting leadership satisfaction and team collaboration.',
 'harrisConducting',
+'left'
+);
+INSERT INTO aboutcards (
+superheading_title,
+superheading_time,  
+superheading_logo,   
+about_title,     
+about_one_bold,
+about_one_content, 
+about_two_bold, 
+about_two_content, 
+about_three_bold, 
+about_three_content, 
+personal_image_name,
+personal_image_side) 
+VALUES (
+'Music and Teamworking: Marching Band', 
+'2013 - 2023',
+'cornellSeal',
+'Teamwork',
+'Long-Term Commitment:',
+'For over 10 years I played saxophone and served in various roles in my High School and College marching bands.',
+'Flexible Team Player:',
+'During my time in Marching Band, I served in a variety of roles from Drum Major to show committee chair designing formations and choosing music, to section leader and librarian.',
+'World Class Performances:',
+'From Madison Square Garden and 5th Avenue to Main Street Disney World and all 8 Ivy League Schools, I brought school spirit and cheer all over the Northeast',
+'harrisMarching',
 'right'
 );
-
