@@ -57,7 +57,7 @@
     border-radius: 9px;
     gap: 2rem;
     color: #fff;
-    box-shadow: 10px 10px #111;
+    box-shadow: 8px 12px 8px 4px #111;
     border: 2px solid #ffffff26;
 }
 @media screen and (max-width: 1024px) {
