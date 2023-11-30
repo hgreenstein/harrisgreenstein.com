@@ -84,7 +84,7 @@ const ExperiencePage = () => {
                             Image={AspirisLogo}
                             onClickIndex={0}
                             onClickFunction={handleExperienceButton}
-                            jobTitle="Software Engineer and Field Technician Intern"
+                            jobTitle="Software Engineer & Field Tech Intern"
                         />
                         <ExperienceButton
                             Image={CatchpointLogo}
