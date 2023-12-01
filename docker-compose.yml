@@ -3,7 +3,7 @@ services:
   postgres:
     image: 'postgres:latest'
     environment:
-    - POSTGRES_PASSWORD=[REDACTED]
+    - POSTGRES_PASSWORD=${DB_PASSWORD}
     volumes:
       - ./database/database.sql:/docker-entrypoint-initdb.d/database.sql
     networks:
@@ -20,7 +20,7 @@ services:
       - PGUSER=postgres
       - PGHOST=postgres
       - PGDATABASE=postgres
-      - PGPASSWORD=[REDACTED]
+      - PGPASSWORD=${DB_PASSWORD}
       - PGPORT=5432
     ports:
       - "5001:5001"

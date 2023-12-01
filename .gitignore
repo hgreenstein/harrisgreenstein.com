@@ -23,4 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
+#Sensitive Information
 client/src/assets/cert/
+.env
