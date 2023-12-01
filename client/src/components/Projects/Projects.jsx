@@ -39,23 +39,38 @@ function Projects() {
                         <Card.Text>
                             <ul className="experience-inner-list">
                                 <li>
-                                    Analyzed global performance analysis of
-                                    Starlink’s internet service, focusing on
-                                    impact of location and time on latency
+                                    This second iteration of
+                                    harrisgreenstein.com evolved from using only
+                                    bare HTML/CSS/JS to full stack development
+                                    mainly utilizing the PERN stack for language
+                                    consistency
                                 </li>
                                 <li>
-                                    Utilized Python and RIPE Atlas API to
-                                    collect and analyze latency data from 25
-                                    globally distributed probes
+                                    The front-end is mainly React.JS utilizing
+                                    hooks, components, and libraries while the
+                                    backend is served via a NodeJs server
+                                    servering as a Restful API for a PostgreSQL
+                                    database.
                                 </li>
                                 <li>
-                                    Concluded Starlink does not consistently
-                                    meet ts advertised latency and documented
-                                    overrepresentations of coverage areas
+                                    Express serves as the middleware between the
+                                    API and the frontend while NGINX quickly
+                                    serves the static frontend content and
+                                    serves as a middle-end reserve proxy in the
+                                    docker container
+                                </li>
+                                <li>
+                                    The entire application is dockerized for
+                                    easy and consistent deployment on different
+                                    linux host servers and local development
                                 </li>
                             </ul>
                         </Card.Text>
-                        <Button variant="primary" href="https://github.com/hgreenstein/harrisgreenstein.com" target="_blank">
+                        <Button
+                            variant="primary"
+                            href="https://github.com/hgreenstein/harrisgreenstein.com"
+                            target="_blank"
+                        >
                             View the Github
                         </Button>
                     </Card.Body>
@@ -160,13 +175,15 @@ function Projects() {
                                 </li>
                             </ul>
                         </Card.Text>
-                        <Button
-                            variant="primary"
-                            href={StarlinkReport}
-                            target="_blank"
-                        >
-                            Read the Report
-                        </Button>
+                        <div className="project-buttons">
+                            <Button
+                                variant="primary"
+                                href={StarlinkReport}
+                                target="_blank"
+                            >
+                                Read the Report
+                            </Button>
+                        </div>
                     </Card.Body>
                     <Card.Footer>
                         <div className="card-footer-container">

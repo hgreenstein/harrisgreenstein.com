@@ -30,7 +30,7 @@ function App() {
                                 darkMode={darkMode}
                                 setDarkMode={setDarkMode}
                             />{' '}
-                            <AboutDev key={darkMode} darkMode={darkMode}/>
+                            <About key={darkMode} darkMode={darkMode}/>
                             <Experience />
                             <Projects />
                             <Footer />

@@ -38,7 +38,7 @@ function NavigationBar({ darkMode, setDarkMode }) {
                                 <img src={LinkedIn} className="nav-linked" />
                             </Navbar.Brand>
                             <Navbar.Brand href="https://github.com/hgreenstein" target="_blank">
-                                <img src={Github} className="nav-github" />
+                                <img src={Github} className={darkMode ? "nav-github github-dark" : "nav-github"} />
                             </Navbar.Brand>
                             <ToggleButton
                                 className={

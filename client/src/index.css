@@ -25,6 +25,7 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 100%;
 }
 .nav-linked {
     filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(1310%)
@@ -32,6 +33,9 @@ html{
 }
 .nav-github {
     max-height: 25px;
+}
+.github-dark {
+   filter: invert(1); 
 }
 .editor-container {
     background-color: #333;

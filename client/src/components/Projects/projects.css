@@ -52,4 +52,6 @@
 .project-buttons{
     display: flex;
     justify-content: space-between;
+    margin-top: clamp(2px, 50px, 100px);
 }
+
