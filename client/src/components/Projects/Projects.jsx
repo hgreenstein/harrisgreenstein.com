@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import SemantleLogo from './assets/semantleLogo.png';
 import StarlinkSatellites from './assets/starlink.png';
-import ApiIcon from './assets/api.svg';
+import ApiIcon from './assets/restfulAPILogo.svg';
 import RipeIcon from './assets/ripeLogo.svg';
 import PythonLogo from './assets/pythonLogo.png';
 import StarlinkLogo from './assets/starlinkLogo.svg';
@@ -37,7 +37,7 @@ function Projects() {
                             Full Stack Development: Harrisgreenstein.com
                         </Card.Title>
                         <Card.Text>
-                            <ul className="project-starlink-list">
+                            <ul className="experience-inner-list">
                                 <li>
                                     Analyzed global performance analysis of
                                     Starlink’s internet service, focusing on
@@ -85,7 +85,7 @@ function Projects() {
                     <Card.Body>
                         <Card.Title>AI Semantle Solver</Card.Title>
                         <Card.Text>
-                            <ul className="project-starlink-list">
+                            <ul className="experience-inner-list">
                                 <li>
                                     Created AI-driven word guessing game solver
                                     using Hierarchical Q-learning and Recurrent
@@ -142,7 +142,7 @@ function Projects() {
                     <Card.Body>
                         <Card.Title>Starlink Latency Analysis</Card.Title>
                         <Card.Text>
-                            <ul className="project-starlink-list">
+                            <ul className="experience-inner-list">
                                 <li>
                                     Analyzed global performance analysis of
                                     Starlink’s internet service, focusing on
