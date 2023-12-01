@@ -169,6 +169,9 @@ function Projects() {
                                     globally distributed probes
                                 </li>
                                 <li>
+                                    Performed statistical data analysis based on numerous geographic factors and correlated performance metrics with satellite and ground station trace-route locations.
+                                </li>
+                                <li>
                                     Concluded Starlink does not consistently
                                     meet its advertised latency and documented
                                     overrepresentations of coverage areas

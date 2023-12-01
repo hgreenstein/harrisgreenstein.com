@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html{
+html {
     scroll-behavior: smooth;
 }
 .tsparticles {
@@ -35,7 +35,7 @@ html{
     max-height: 25px;
 }
 .github-dark {
-   filter: invert(1); 
+    filter: invert(1);
 }
 .editor-container {
     background-color: #333;
@@ -133,13 +133,13 @@ html{
     display: flex;
     flex-direction: column;
 }
-.alert{
+.alert {
     z-index: 3;
     height: 100%;
     width: 100%;
     margin-top: 75px;
 }
-.footer-container{
+.footer-container {
     z-index: 1;
     text-align: center;
     width: 100%;
@@ -150,4 +150,17 @@ html{
 }
 .about-header-container {
     width: 100%;
+}
+.navbar a {
+    padding: clamp(0px, 5px, 25px);
+}
+@media screen and (min-width: 600px) {
+    .navbar-nav {
+        margin-right: 2dvw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar-nav {
+        width: 100%;
+    }
 }
