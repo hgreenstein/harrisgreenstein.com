@@ -55,7 +55,7 @@ function Projects() {
                                 </li>
                             </ul>
                         </Card.Text>
-                        <Button variant="primary" href="#">
+                        <Button variant="primary" href="https://github.com/hgreenstein/harrisgreenstein.com" target="_blank">
                             View the Github
                         </Button>
                     </Card.Body>

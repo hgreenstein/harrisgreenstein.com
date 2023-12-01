@@ -10,6 +10,7 @@ import Moon from '../assets/moon.svg';
 import Sun from '../assets/sun.svg';
 import LinkedIn from '../assets/linkedin.svg';
 import HandleNavigation from '../handleNavigation'
+import Github from '../assets/githubLogo.png';
 function NavigationBar({ darkMode, setDarkMode }) {
         return (
         <>
@@ -33,8 +34,11 @@ function NavigationBar({ darkMode, setDarkMode }) {
                             </p>
                         </Navbar.Brand>
                         <div className="nav-left-logo">
-                            <Navbar.Brand href="https://www.linkedin.com/in/harrisgreenstein/">
+                            <Navbar.Brand href="https://www.linkedin.com/in/harrisgreenstein/" target="_blank">
                                 <img src={LinkedIn} className="nav-linked" />
+                            </Navbar.Brand>
+                            <Navbar.Brand href="https://github.com/hgreenstein" target="_blank">
+                                <img src={Github} className="nav-github" />
                             </Navbar.Brand>
                             <ToggleButton
                                 className={

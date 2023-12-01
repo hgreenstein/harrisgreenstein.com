@@ -30,6 +30,9 @@ html{
     filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(1310%)
         hue-rotate(189deg) brightness(89%) contrast(95%);
 }
+.nav-github {
+    max-height: 25px;
+}
 .editor-container {
     background-color: #333;
     border-radius: 10px;
