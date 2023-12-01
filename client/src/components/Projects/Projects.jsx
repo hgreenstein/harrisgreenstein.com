@@ -168,6 +168,7 @@ function Projects() {
                                     collect and analyze latency data from 25
                                     globally distributed probes
                                 </li>
+                                <li>Conducted data analysis of results and correlated measured metrics with satellite locations and geographic regions using Python libraries like Matplotlib, figures and results in full report</li>
                                 <li>
                                     Concluded Starlink does not consistently
                                     meet its advertised latency and documented
