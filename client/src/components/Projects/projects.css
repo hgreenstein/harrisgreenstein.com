@@ -1,9 +1,19 @@
 .projects {
     z-index: 1;
 }
-.projects-heading{
+.projects-heading {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    width: 40dvw;
+    margin-top: 0.5rem;
+    border-radius: 9px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 11px 1px #333;
+    margin-bottom: 3dvh;
     color: var(--bs-heading-color) !important;
+    background-color: var(--bs-body-bg);
 }
 .experience-inner-list {
     list-style-type: circle;
@@ -13,8 +23,10 @@
 }
 .card {
     margin-bottom: 25px;
+    box-shadow: 11px 6px 20px 0px #333;
+    transition: transform 0.3s ease;
 }
-.card > img{
+.card > img {
     border-bottom: 0.5px dashed #24292e;
 }
 .project-card-container {
@@ -31,9 +43,12 @@
         width: 100% !important;
     }
 }
-@media screen and (min-width: 1024px){
-    .card{
+@media screen and (min-width: 1024px) {
+    .card {
         width: 30%;
+    }
+    .card:hover {
+        transform: scale(1.03);
     }
 }
 .card-footer-icons {
@@ -46,12 +61,11 @@
     max-height: 50px;
     max-width: 25%;
 }
-.card-top-list{
+.card-top-list {
     margin-bottom: 10px;
 }
-.project-buttons{
+.project-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: clamp(2px, 50px, 100px);
 }
-

@@ -24,6 +24,25 @@
 }
 .experience-title {
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 20px;
+    margin-top: 0.5rem;
+    border-radius: 9px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 11px 1px #333;
+    margin-bottom: 5dvh;
+    color: #24292e !important;
+}
+@media screen and (min-width: 700px){
+    .experience-title{
+        width: 40dvw;
+    }
+}
+@media screen and (max-width: 700px){
+    .experience-title{
+        width: 65dvw;
+    }
 }
 @media screen and (min-width: 1024px) {
     .experience-content-grid {
