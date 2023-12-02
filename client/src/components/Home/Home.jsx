@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback } from 'react';
+import React, { useEffect, useCallback, useRef } from 'react';
 import Typewriter from 'typewriter-effect';
 import HarrisLight from './assets/redOutline.png';
 import HarrisDark from './assets/darkModeHarris.png';
@@ -9,22 +9,42 @@ import { loadSlim } from 'tsparticles-slim';
 import AlertDismissible from './AlertDismissible';
 import HarrisConducting from '../About/assets/pepBand.jpg';
 import HandleNavigation from '../../handleNavigation.js';
-import TGCSStar from './assets/tgcsStar.png'
+import TGCSStar from './assets/tgcsStar.png';
 function Home({ darkMode }) {
     let varaCounter = 0;
+    const heroImage = useRef(null);
     const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
         await loadSlim(engine);
     }, []);
-    const particlesLoaded = useCallback(async (container) => {
-        //No callback function needed
-    }, []);
+    useEffect(() => {
+        const currentHeroImage = heroImage.current;
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('home-hero-image-animate'); // Updated class name
+                    }
+                });
+            },
+            {
+                rootMargin: '0px', // Adjust as needed
+                threshold: 0.05, // Adjust the threshold as per your requirement
+            }
+        );
+        if (currentHeroImage) {
+            observer.observe(currentHeroImage);
+        }
+        return () => {
+            if (currentHeroImage) {
+                observer.unobserve(currentHeroImage);
+            }
+        };
+    }, [heroImage]);
     return (
         <>
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                loaded={particlesLoaded}
                 options={{
                     particles: {
                         number: {
@@ -34,7 +54,7 @@ function Home({ darkMode }) {
                             },
                         },
                         color: {
-                            value: darkMode ? "#fff" : "#000",
+                            value: darkMode ? '#fff' : '#000',
                         },
                         shape: {
                             type: 'square',
@@ -101,7 +121,7 @@ function Home({ darkMode }) {
                         },
                     },
                     background: {
-                        color: darkMode ? "#222" : "#fff",
+                        color: darkMode ? '#222' : '#fff',
                         position: '50% 50%',
                         repeat: 'no-repeat',
                         size: '20%',
@@ -158,9 +178,18 @@ function Home({ darkMode }) {
                                                 alt=""
                                             />
                                             <p className="home-latest-pick-description">
-                                                <a href="#" title="" onClick={HandleNavigation}>
-                                                    Find out about my exciting internship experience & view my full resume 
-                                                    <span className="home-latest-pick-span" href="#background-container"></span>
+                                                <a
+                                                    href="#"
+                                                    title=""
+                                                    onClick={HandleNavigation}
+                                                >
+                                                    Find out about my exciting
+                                                    internship experience & view
+                                                    my full resume
+                                                    <span
+                                                        className="home-latest-pick-span"
+                                                        href="#background-container"
+                                                    ></span>
                                                 </a>
                                             </p>
                                         </div>
@@ -173,9 +202,18 @@ function Home({ darkMode }) {
                                                 alt=""
                                             />
                                             <p className="home-latest-pick-description">
-                                                <a href ="#about" onClick={HandleNavigation} title="">
-                                                    Learn about my time as conductor of the Big Red Pep Band!
-                                                    <span className="home-latest-pick-span" href="#leadership" ></span>
+                                                <a
+                                                    href="#about"
+                                                    onClick={HandleNavigation}
+                                                    title=""
+                                                >
+                                                    Learn about my time as
+                                                    conductor of the Big Red Pep
+                                                    Band!
+                                                    <span
+                                                        className="home-latest-pick-span"
+                                                        href="#leadership"
+                                                    ></span>
                                                 </a>
                                             </p>
                                         </div>
@@ -186,7 +224,8 @@ function Home({ darkMode }) {
                             <div className="home-hero-image">
                                 <img
                                     src={darkMode ? HarrisDark : HarrisLight}
-                                    alt=""
+                                    alt="Image of Harris Greenstein"
+                                    ref={heroImage}
                                 />
                             </div>
                         </div>
