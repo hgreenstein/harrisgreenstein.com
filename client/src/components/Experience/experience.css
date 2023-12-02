@@ -228,7 +228,7 @@
 }
 .aspiris-software-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 .resume-button-container {
     display: flex;
@@ -247,4 +247,7 @@
     width: 30%;
     text-align: center;
     height: 22.5%;
+}
+.salesforce-logo{
+    max-width: 50px !important;
 }
