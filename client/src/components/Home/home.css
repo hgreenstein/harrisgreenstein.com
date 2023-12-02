@@ -245,6 +245,11 @@
         min-width: 350px;
     }
 }
+@media screen and (min-width: 400px) and (max-width: 600px){
+    .vara{
+        min-width: 320px;
+    }
+}
 .vara {
     padding-top: 10px;
 }
