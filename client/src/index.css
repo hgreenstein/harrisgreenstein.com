@@ -7,17 +7,24 @@ html {
 .tsparticles {
     z-index: 0;
 }
+.nav-left {
+    display: flex;
+}
 @media screen and (min-width: 992px) {
     .nav-left {
-        display: flex;
         align-items: center;
         flex-direction: row;
     }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 500px) {
+    .nav-left {
+        margin-bottom: auto;
+    }
+}
+@media screen and (max-width: 375px) {
     .nav-left {
         display: flex;
-        margin-bottom: auto;
+        flex-direction: column;
     }
 }
 
@@ -164,3 +171,4 @@ html {
         width: 100%;
     }
 }
+

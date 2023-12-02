@@ -8,7 +8,7 @@ const handleNavigation = (e) => {
             // Function to run after scroll is complete
             const afterScroll = () => {
                 window.scrollBy({
-                    top: -50,
+                    top: -60,
                     left: 0,
                     behavior: 'smooth',
                 });

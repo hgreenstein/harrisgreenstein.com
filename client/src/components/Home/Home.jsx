@@ -155,7 +155,8 @@ function Home({ darkMode }) {
                                 <div className="home-button-wrapper">
                                     <div className="home-button-background"></div>
                                     <a
-                                        href="#"
+                                        href="#about"
+                                        onClick={HandleNavigation}
                                         title=""
                                         className="home-read-button"
                                         role="button"
