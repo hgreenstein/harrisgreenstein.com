@@ -30,14 +30,14 @@ INSERT INTO aboutcards (
     personal_image_name,
     personal_image_side) 
 VALUES (
-    'Cornell University, B.Sc. Computer Science, Minor in Business for Engineers,', 
+    'Cornell University, B.S. Computer Science, Minor in Business for Engineers,', 
     '2019 - 2023',
     'cornellSeal',
     'My Education',
     'Advanced Technical Curriculum:',
     'Mastered complex concepts in Object-Oriented and Functional Programming, Networking, Embedded Systems, AI, and more, ensuring a deep technical understanding and practical application skills in computer science.',
     'Practical Projects:',
-    'Developed an AI agent that utilized neural networks, and NLP and analyzed the worldwide network coverage of Starlink Satellite Internet, learn more in projects.',
+    'Developed an AI agent that utilized neural networks and NLP, and analyzed the worldwide network coverage of Starlink Satellite Internet. Learn more in projects.',
     'Business Mindset:',
     'Studies in business were pivotal in linking C.S. principles with their practical applications, ensuring technical solutions are grounded in solid business strategies.',
     'harrisGrad',
@@ -89,11 +89,11 @@ VALUES (
 'cornellSeal',
 'Teamwork',
 'Long-Term Commitment:',
-'For over 10 years I played saxophone and served in various roles in my High School and College marching bands.',
+'For over 10 years I played saxophone and served in various roles in my high school and college marching bands.',
 'Flexible Team Player:',
-'During my time in Marching Band, I served in a variety of roles from Drum Major to show committee chair designing formations and choosing music, to section leader and librarian.',
+'During my time in Marching Band, I served in a variety of roles from Drum Major to Show Committee Chair designing formations and choosing music, to Section Leader and Librarian.',
 'World Class Performances:',
-'From Madison Square Garden and 5th Avenue to Main Street Disney World and all 8 Ivy League Schools, I brought school spirit and cheer all over the Northeast',
+'From Madison Square Garden and 5th Avenue to Main Street Disney World and all 8 Ivy League Schools, I brought school spirit and cheer all over the Northeast.',
 'harrisMarching',
 'right'
 );

@@ -34,7 +34,7 @@ function Projects() {
                     <Card.Img variant="top" src={HarrisGreensteinLogo} />
                     <Card.Body>
                         <Card.Title>
-                            Full Stack Development: Harrisgreenstein.com
+                            Full Stack Development: harrisgreenstein.com
                         </Card.Title>
                         <Card.Text>
                             <ul className="experience-inner-list">
@@ -50,7 +50,7 @@ function Projects() {
                                     hooks, components, and libraries while the
                                     backend is served via a NodeJs server
                                     servering as a Restful API for a PostgreSQL
-                                    database.
+                                    database
                                 </li>
                                 <li>
                                     Express serves as the middleware between the
@@ -169,7 +169,7 @@ function Projects() {
                                     globally distributed probes
                                 </li>
                                 <li>
-                                    Performed statistical data analysis based on numerous geographic factors and correlated performance metrics with satellite and ground station trace-route locations.
+                                    Performed statistical data analysis based on numerous geographic factors and correlated performance metrics with satellite and ground station trace-route locations
                                 </li>
                                 <li>
                                     Concluded Starlink does not consistently

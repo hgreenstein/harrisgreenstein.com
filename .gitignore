@@ -25,4 +25,5 @@ dist-ssr
 
 #Sensitive Information
 client/src/assets/cert/
+client/src/components/Contact/emailCreds.js
 .env

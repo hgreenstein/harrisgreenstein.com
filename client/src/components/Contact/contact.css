@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 10px 20px;
-    width: 40dvw;
+    width: 28dvw;
     margin-top: 0.5rem;
     border-radius: 9px;
     border: 1px solid black;
@@ -32,10 +32,49 @@
     list-style: none;
     margin-bottom: 10px;
     overflow: hidden;
-    position: relative;
     opacity: 0;
     animation-fill-mode: forwards;
 }
 .contact-list-animation {
     animation: fadeInScaleUp 1s ease-in-out;
 }
+.contact-form-half {
+    width: 100%;
+    margin-left: 2%;
+    clear: none;
+}
+.contact-form-half > input {
+    width: 100%;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-heading-color) !important;
+}
+.contact-form-half > input::placeholder {
+    color: var(--bs-heading-color) !important;
+}
+.contact-form-half:first-child{
+    margin-left: 0;
+}
+.contact-form-textarea{
+    width: 100%;
+    border: 0;
+    height: 50px;
+    font-size: 1rem;
+    padding: 20px;
+    min-height: 150px;
+}
+.contact-form-textarea > textarea {
+    width: 100%;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-heading-color) !important;
+}
+.contact-form-textarea > textarea::placeholder{
+    color: var(--bs-heading-color) !important;
+
+}
+.contact-form-submit{
+    width: 100%;
+}
+.contact-submit-button{
+    width: 100%;
+}
+

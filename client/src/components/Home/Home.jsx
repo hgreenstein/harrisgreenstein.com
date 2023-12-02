@@ -133,7 +133,7 @@ function Home({ darkMode }) {
                                 <div className="home-button-wrapper">
                                     <div className="home-button-background"></div>
                                     <a
-                                        href="#about"
+                                        href="#leadership"
                                         onClick={HandleNavigation}
                                         title=""
                                         className="home-read-button"
@@ -158,7 +158,7 @@ function Home({ darkMode }) {
                                             />
                                             <p className="home-latest-pick-description">
                                                 <a
-                                                    href="#"
+                                                    href="#background-container"
                                                     title=""
                                                     onClick={HandleNavigation}
                                                 >

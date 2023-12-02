@@ -37,6 +37,7 @@ function AboutCard({ darkMode, data }) {
                         <div className="about-content-cornell">
                             <h5>
                                 {data.superheading.name}{' '}
+                                {data.superheading.name === 'Music and Teamworking: Marching Band' ? <br/> : undefined}
                                 {data.superheading.period}
                             </h5>
                             <img

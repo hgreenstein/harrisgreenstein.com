@@ -1,7 +1,7 @@
 const mockAboutCards = [
     {
         superheading: {
-            name: 'Cornell University, B.Sc. Computer Science, Minor in Business for Engineers,',
+            name: 'Cornell University, B.S. Computer Science, Minor in Business for Engineers,',
             period: '2019 - 2023',
             logo: 'cornellSeal',
         },
@@ -15,7 +15,7 @@ const mockAboutCards = [
             two: {
                 bold: 'Practical Projects:',
                 content:
-                    'Developed an AI agent that utilized neural networks, and NLP and analyzed the worldwide network coverage of Starlink Satellite Internet, learn more in projects.',
+                    'Developed an AI agent that utilized neural networks and NLP, and analyzed the worldwide network coverage of Starlink Satellite Internet. Learn more in projects.',
             },
             three: {
                 bold: 'Business Mindset:',
@@ -73,11 +73,11 @@ const mockAboutCards = [
             two: {
                 bold: 'Flexible Team Player:',
                 content:
-                    'During my time in Marching Band, I served in a variety of roles from Drum Major to show committee chair designing formations and choosing music, to section leader and librarian.',
+                    'During my time in Marching Band, I served in a variety of roles from Drum Major to Show Committee Chair designing formations and choosing music, to Section Leader and Librarian.',
             },
             three: {
                 bold: 'World Class Performances:',
-                content: 'From Madison Square Garden and 5th Avenue to Main Street Disney World and all 8 Ivy League Schools, I brought school spirit and cheer all over the Northeast',
+                content: 'From Madison Square Garden and 5th Avenue to Main Street Disney World and all 8 Ivy League Schools, I brought school spirit and cheer all over the Northeast.',
             },
         },
         personalImage: {
