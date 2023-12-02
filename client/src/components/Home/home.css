@@ -240,8 +240,12 @@
         margin-top: 20%;
     }
 }
-.vara {
-    height: 50px;
-    padding-top: 10px;
-    min-width: 350px;
+@media screen and (min-width: 600px){
+    .vara{
+        min-width: 350px;
+    }
 }
+.vara {
+    padding-top: 10px;
+}
+
