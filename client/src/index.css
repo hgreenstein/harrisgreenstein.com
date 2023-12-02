@@ -21,8 +21,8 @@ html{
         margin-bottom: auto;
     }
 }
-@media screen and (max-width: 450px){
-    .nav-left{
+@media screen and (max-width: 375px) {
+    .nav-left {
         display: flex;
         flex-direction: column;
     }
