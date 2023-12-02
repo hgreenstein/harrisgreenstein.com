@@ -17,7 +17,7 @@
     color: var(--bs-heading-color) !important;
     background-color: var(--bs-body-bg);
 }
-.contact-form{
+.contact-form {
     width: 100%;
     margin-top: 20px;
 }
@@ -34,5 +34,8 @@
     overflow: hidden;
     position: relative;
     opacity: 0;
-    animation: fadeInUp
+    animation-fill-mode: forwards;
+}
+.contact-list-animation {
+    animation: fadeInScaleUp 1s ease-in-out;
 }

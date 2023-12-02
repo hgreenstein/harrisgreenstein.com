@@ -97,7 +97,8 @@ function NavigationBar({ darkMode, setDarkMode }) {
                                     Projects
                                 </Nav.Link>
                                 <Nav.Link
-                                    href="#Contact"
+                                    href="#contact"
+                                    onClick={HandleNavigation}
                                     className={
                                         darkMode
                                             ? 'navbar-collapse-item-dark text-light'

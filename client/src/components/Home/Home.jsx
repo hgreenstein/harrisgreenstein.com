@@ -10,36 +10,14 @@ import AlertDismissible from './AlertDismissible';
 import HarrisConducting from '../About/assets/pepBand.jpg';
 import HandleNavigation from '../../handleNavigation.js';
 import TGCSStar from './assets/tgcsStar.png';
+import useAnimateOnObserve from '../../Custom-Hooks/useAnimateOnObserve.js';
 function Home({ darkMode }) {
     let varaCounter = 0;
     const heroImage = useRef(null);
     const particlesInit = useCallback(async (engine) => {
         await loadSlim(engine);
     }, []);
-    useEffect(() => {
-        const currentHeroImage = heroImage.current;
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('home-hero-image-animate'); // Updated class name
-                    }
-                });
-            },
-            {
-                rootMargin: '0px', // Adjust as needed
-                threshold: 0.05, // Adjust the threshold as per your requirement
-            }
-        );
-        if (currentHeroImage) {
-            observer.observe(currentHeroImage);
-        }
-        return () => {
-            if (currentHeroImage) {
-                observer.unobserve(currentHeroImage);
-            }
-        };
-    }, [heroImage]);
+    useAnimateOnObserve(heroImage, 'home-hero-image-animate', { rootMargin: '0px', threshold: 0.05 });
     return (
         <>
             <Particles
