@@ -1,5 +1,6 @@
 .projects {
     z-index: 1;
+    margin-top: 2dvh;
 }
 .projects-heading {
     text-align: center;

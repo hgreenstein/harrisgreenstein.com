@@ -1,40 +1,46 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css';
 import '../../index.css';
 import useAnimateOnObserve from '../../Custom-Hooks/useAnimateOnObserve';
 import emailjs from '@emailjs/browser';
 import emailCreds from './emailCreds.js';
+import Spinner from 'react-bootstrap/Spinner';
 function Contact() {
     const contactListItems = useRef([]);
     const contactForm = useRef(null);
+    const [emailLoading, setEmailLoading] = useState(false);
     useAnimateOnObserve(contactListItems, 'contact-list-animation', {
         rootMargin: '0px',
         threshold: 0.1,
     });
     const sendEmail = (e) => {
         e.preventDefault();
-        emailjs.sendForm(
-            emailCreds.credentials.service,
-            emailCreds.credentials.template,
-            contactForm.current,
-            emailCreds.credentials.key
-        )
-        .then(
+        setEmailLoading(true);
+        emailjs
+            .sendForm(
+                emailCreds.credentials.service,
+                emailCreds.credentials.template,
+                contactForm.current,
+                emailCreds.credentials.key
+            )
+            .then(
                 () => {
                     alert('Email was successfully sent to Harris Greenstein!');
+                    setEmailLoading(false);
+                    contactForm.current.reset();
                 },
                 () => {
                     alert('Email was not successfully sent, please try again');
+                    setEmailLoading(false);
                 }
-            )
-    }
+            );
+    };
 
     return (
         <section id="contact" className="contact-container">
             <h1 className="contact-header">Contact Me</h1>
             <div className="contact-form">
-                <form ref={contactForm}
-                onSubmit={sendEmail}>
+                <form ref={contactForm} onSubmit={sendEmail}>
                     <ul className="contact-form-list">
                         <li
                             className="contact-form-half"
@@ -93,11 +99,20 @@ function Contact() {
                                 (contactListItems.current[4] = element)
                             }
                         >
-                            <input
-                                type="submit"
-                                className="contact-submit-button"
-                                value="SEND"
-                            />
+                            {emailLoading ? (
+                                <div className="contact-form-spinner">
+                                    <Spinner
+                                        animation="border"
+                                        variant="danger"
+                                    />
+                                </div>
+                            ) : (
+                                <input
+                                    type="submit"
+                                    className="contact-submit-button"
+                                    value="Send"
+                                />
+                            )}
                         </li>
                     </ul>
                 </form>

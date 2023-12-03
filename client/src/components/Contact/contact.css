@@ -1,4 +1,5 @@
 .contact-container {
+    margin-top: 4dvh;
     z-index: 1;
     width: 100%;
     height: 100%;
@@ -8,7 +9,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 10px 20px;
-    width: 28dvw;
     margin-top: 0.5rem;
     border-radius: 9px;
     border: 1px solid black;
@@ -17,10 +17,23 @@
     color: var(--bs-heading-color) !important;
     background-color: var(--bs-body-bg);
 }
-.contact-form {
-    width: 100%;
-    margin-top: 20px;
+@media screen and (min-width: 1024px) {
+    .contact-header {
+        max-width: 28dvw;
+    }
+    .contact-form {
+        width: 100%;
+    }
 }
+@media screen and (max-width: 1024px) {
+    .contact-header {
+        max-width: 80dvw;
+    }
+    .contact-form {
+        max-width: 80dvw;
+    }
+}
+
 .contact-form-list {
     padding: 0;
     margin: 0;
@@ -51,10 +64,10 @@
 .contact-form-half > input::placeholder {
     color: var(--bs-heading-color) !important;
 }
-.contact-form-half:first-child{
+.contact-form-half:first-child {
     margin-left: 0;
 }
-.contact-form-textarea{
+.contact-form-textarea {
     width: 100%;
     border: 0;
     height: 50px;
@@ -67,14 +80,17 @@
     background-color: var(--bs-body-bg);
     color: var(--bs-heading-color) !important;
 }
-.contact-form-textarea > textarea::placeholder{
+.contact-form-textarea > textarea::placeholder {
     color: var(--bs-heading-color) !important;
-
 }
-.contact-form-submit{
+.contact-form-submit {
     width: 100%;
 }
-.contact-submit-button{
+.contact-submit-button {
     width: 100%;
 }
-
+.contact-form-spinner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
