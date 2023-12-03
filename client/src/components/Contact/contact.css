@@ -24,6 +24,9 @@
     .contact-form {
         width: 100%;
     }
+    .contact-message{
+        width: 800px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .contact-header {
@@ -32,8 +35,17 @@
     .contact-form {
         max-width: 80dvw;
     }
+    .contact-message{
+        max-width: 80dvw;
+    }
 }
-
+.contact-message{
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: wrap;
+    text-align: center;
+    padding-bottom: 10px;
+}
 .contact-form-list {
     padding: 0;
     margin: 0;

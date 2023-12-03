@@ -39,6 +39,7 @@ function Contact() {
     return (
         <section id="contact" className="contact-container">
             <h1 className="contact-header">Contact Me</h1>
+            <h4 className="contact-message">📬 Interesting in talking more? Reach out and let's start a conversation!</h4>
             <div className="contact-form">
                 <form ref={contactForm} onSubmit={sendEmail}>
                     <ul className="contact-form-list">
