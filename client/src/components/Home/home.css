@@ -101,6 +101,16 @@
         font-size: 3rem;
     }
 }
+@media screen and (max-width: 500px) and (min-width: 350px){
+    .home-section-bg-gradient{
+        margin-top: 19dvh !important;
+    }
+}
+@media screen and (max-width: 350px){
+    .home-section-bg-gradient{
+        margin-top: 25dvh !important;
+    }
+}
 .home-intro-text {
     margin-top: 1.25rem;
     font-size: 1rem;
