@@ -5,16 +5,25 @@ import useAnimateOnObserve from '../../Custom-Hooks/useAnimateOnObserve';
 import emailjs from '@emailjs/browser';
 import emailCreds from './emailCreds.js';
 import Spinner from 'react-bootstrap/Spinner';
+import ReCAPTCHA from 'react-google-recaptcha';
 function Contact() {
     const contactListItems = useRef([]);
     const contactForm = useRef(null);
     const [emailLoading, setEmailLoading] = useState(false);
+    const [recaptchaValue, setRecaptchaValue] = useState(null);
     useAnimateOnObserve(contactListItems, 'contact-list-animation', {
         rootMargin: '0px',
         threshold: 0.1,
     });
+    const onRecaptchaChange = (newVal) => {
+        setRecaptchaValue(newVal);
+    };
     const sendEmail = (e) => {
         e.preventDefault();
+        if (!recaptchaValue) {
+            alert('Please verify you are not a robot by using the ReCAPTCHA');
+            return;
+        }
         setEmailLoading(true);
         emailjs
             .sendForm(
@@ -39,7 +48,10 @@ function Contact() {
     return (
         <section id="contact" className="contact-container">
             <h1 className="contact-header">Contact Me</h1>
-            <h4 className="contact-message">📬 Interesting in talking more? Reach out and let's start a conversation!</h4>
+            <h4 className="contact-message">
+                📬 Interesting in talking more? Reach out and let's start a
+                conversation!
+            </h4>
             <div className="contact-form">
                 <form ref={contactForm} onSubmit={sendEmail}>
                     <ul className="contact-form-list">
@@ -95,9 +107,20 @@ function Contact() {
                             />
                         </li>
                         <li
-                            className="contact-form-submit"
+                            className="contact-form-recaptcha"
                             ref={(element) =>
                                 (contactListItems.current[4] = element)
+                            }
+                        >
+                            <ReCAPTCHA
+                                sitekey={emailCreds.recaptcha.siteKey}
+                                onChange={onRecaptchaChange}
+                            />
+                        </li>
+                        <li
+                            className="contact-form-submit"
+                            ref={(element) =>
+                                (contactListItems.current[5] = element)
                             }
                         >
                             {emailLoading ? (
