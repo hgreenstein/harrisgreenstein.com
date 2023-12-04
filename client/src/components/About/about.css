@@ -2,7 +2,7 @@
     z-index: 2;
     font-family: 'Noto Serif Ottoman Siyaq', serif;
 }
-.react-parallax-content{
+.react-parallax-content {
     height: 100%;
     width: 100%;
 }
@@ -58,13 +58,14 @@
     gap: 2rem;
     color: #fff;
     box-shadow: 8px 12px 8px 4px #111;
+    animation-fill-mode: forward;
     border: 2px solid #ffffff26;
 }
 @media screen and (max-width: 1024px) {
     .about-content {
         max-width: 70dvw;
     }
-    .left-img{
+    .left-img {
         order: 2;
     }
 }
@@ -76,6 +77,39 @@
     margin-block: 2rem;
     max-height: 80dvh;
     border-radius: 9px;
+    animation-fill-mode: forward;
+}
+@keyframes fadeInSlideLeft {
+    from {
+        opacity: 0.4;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInSlideRight {
+    from {
+        opacity: 0.4;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.about-card-animate-left {
+    animation: fadeInSlideLeft 0.7s ease-in-out;
+}
+.about-card-animate-right {
+    animation: fadeInSlideRight 0.7s ease-in-out;
+}
+.about-image-animate-left {
+    animation: fadeInSlideLeft 1.2s ease-in-out;
+}
+.about-image-animate-right{
+    animation: fadeInSlideRight 1.2s ease-in-out;
 }
 
 .about-content-cornell {

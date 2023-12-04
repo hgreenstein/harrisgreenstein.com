@@ -1,9 +1,10 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useRef } from 'react';
 import './about.css';
 import Harris from './assets/harrisGradClock.jpg';
 import CornellLogo from './assets/cornellLogo.png';
 import Conducting from './assets/pepBand.jpg';
-import Marching from './assets/harrisMarchingCropped.jpg'
+import Marching from './assets/harrisMarchingCropped.jpg';
+import useAnimateOnObserve from '../../Custom-Hooks/useAnimateOnObserve.js';
 function AboutCard({ darkMode, data }) {
     const logoName = data.superheading.logo;
     const logo = () => {
@@ -17,27 +18,54 @@ function AboutCard({ darkMode, data }) {
     const image = () => {
         if (imageName === 'harrisGrad') {
             return Harris;
-        } 
-        if (imageName === 'harrisConducting'){
-            return Conducting;
         }
-        else {
+        if (imageName === 'harrisConducting') {
+            return Conducting;
+        } else {
             return Marching;
         }
     };
     const imageVar = image();
     const logoVar = logo();
+    const cardImage = useRef(null);
+    const cardContent = useRef(null);
     const imageSide = data.personalImage.side === 'left' ? true : false;
+    const imageClass = imageSide
+        ? 'about-image-animate-left'
+        : 'about-image-animate-right';
+    const contentClass = imageSide
+        ? 'about-card-animate-right'
+        : 'about-card-animate-left';
+    useAnimateOnObserve(cardImage, imageClass, {
+        rootMargin: '0px',
+        threshold: 0.05,
+    });
+    useAnimateOnObserve(cardContent, contentClass, {
+        rootMargin: '0px',
+        threshold: 0.05,
+    });
     return (
         <>
-            <div className="about-container" id={imageName === 'harrisConducting' ? 'leadership' : undefined}>
+            <div
+                className="about-container"
+                id={imageName === 'harrisConducting' ? 'leadership' : undefined}
+            >
                 <div className="about-content-grid">
-                    {imageSide && <img src={imageVar} className="about-img left-img" />}
-                    <div className="about-content">
+                    {imageSide && (
+                        <img
+                            src={imageVar}
+                            className="about-img left-img"
+                            ref={cardImage}
+                        />
+                    )}
+                    <div className="about-content" ref={cardContent}>
                         <div className="about-content-cornell">
                             <h5>
                                 {data.superheading.name}{' '}
-                                {data.superheading.name === 'Music and Teamworking: Marching Band' ? <br/> : undefined}
+                                {data.superheading.name ===
+                                'Music and Teamworking: Marching Band' ? (
+                                    <br />
+                                ) : undefined}
                                 {data.superheading.period}
                             </h5>
                             <img
@@ -58,7 +86,7 @@ function AboutCard({ darkMode, data }) {
                                             {data.aboutContent.one.content}{' '}
                                         </li>
                                         <li>
-                                           <strong>
+                                            <strong>
                                                 {data.aboutContent.two.bold}
                                             </strong>{' '}
                                             {data.aboutContent.two.content}{' '}
@@ -74,7 +102,7 @@ function AboutCard({ darkMode, data }) {
                             </div>
                         </div>
                     </div>
-                    {!imageSide && <img src={imageVar} className="about-img" />}
+                    {!imageSide && <img src={imageVar} className="about-img" ref={cardImage}/>}
                 </div>
             </div>
         </>

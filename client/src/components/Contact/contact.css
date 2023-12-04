@@ -24,7 +24,7 @@
     .contact-form {
         width: 100%;
     }
-    .contact-message{
+    .contact-message {
         width: 800px;
     }
 }
@@ -32,14 +32,23 @@
     .contact-header {
         max-width: 80dvw;
     }
-    .contact-form {
-        max-width: 80dvw;
-    }
-    .contact-message{
+
+    .contact-message {
         max-width: 80dvw;
     }
 }
-.contact-message{
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+    .contact-form {
+        max-width: 80dvw;
+    }
+}
+@media screen and (max-width: 375px){
+    .contact-form{
+        max-width: 92dvw;
+        width: 100%;
+    }
+}
+.contact-message {
     margin-left: auto;
     margin-right: auto;
     text-wrap: wrap;
@@ -101,7 +110,7 @@
 .contact-submit-button {
     width: 100%;
 }
-.contact-form-spinner{
+.contact-form-spinner {
     display: flex;
     justify-content: center;
     width: 100%;
