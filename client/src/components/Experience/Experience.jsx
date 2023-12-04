@@ -22,6 +22,26 @@ const ExperiencePage = () => {
             setDelay(7000);
         }, 30000);
     };
+     useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const [entry] = entries;
+            if (entry.isIntersecting) {
+                setDelay(7000);
+            } else {
+                setDelay(null);
+            }
+        }, { threshold: 0.1 }); // Adjust threshold as needed
+
+        if (backgroundContainer.current) {
+            observer.observe(backgroundContainer.current);
+        }
+
+        return () => {
+            if (backgroundContainer.current) {
+                observer.unobserve(backgroundContainer.current);
+            }
+        };
+    }, []);
     const handleCardIndex = (selectedIndex) => {
         setCardIndex(selectedIndex);
         if (backgroundContainer.current) {
