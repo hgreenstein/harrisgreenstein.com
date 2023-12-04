@@ -182,7 +182,7 @@ function Home({ darkMode }) {
                                             />
                                             <p className="home-latest-pick-description">
                                                 <a
-                                                    href="#about"
+                                                    href="#leadership"
                                                     onClick={HandleNavigation}
                                                     title=""
                                                 >

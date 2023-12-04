@@ -19,7 +19,7 @@ function App() {
     }, [darkMode]);
     return (
         <Router>
-            <NavigationBar darkMode={darkMode} setDarkMode={setDarkMode} />
+            <NavigationBar darkMode={darkMode} setDarkMode={setDarkMode} id ="navbar"/>
             <Routes>
                 <Route
                     path="/"
