@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GoogleAnalytics from './components/GoogleAnalytics';
 import Home from './components/Home/Home';
 import NavigationBar from './components/NavigationBar';
 import About from './components/About/About';
@@ -19,6 +20,7 @@ function App() {
     }, [darkMode]);
     return (
         <Router>
+            <GoogleAnalytics />
             <NavigationBar darkMode={darkMode} setDarkMode={setDarkMode} id ="navbar"/>
             <Routes>
                 <Route
@@ -29,7 +31,7 @@ function App() {
                                 darkMode={darkMode}
                                 setDarkMode={setDarkMode}
                             />{' '}
-                            <About key={darkMode} darkMode={darkMode}/>
+                            <AboutDev key={darkMode} darkMode={darkMode}/>
                             <Experience />
                             <Projects />
                             <Contact />
