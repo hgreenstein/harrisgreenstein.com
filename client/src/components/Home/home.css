@@ -175,7 +175,7 @@
         padding-bottom: 10rem;
         grid-column: span 3;
         padding-left: 20px;
-        margin-bottom: 10dvh;
+        margin-bottom: 5dvh;
     }
 }
 .home-latest-picks-title {
@@ -273,4 +273,7 @@
 .contact-form-recaptcha > div > div > div {
     margin-left: auto;
     margin-right: auto;
+}
+.home-react-logo{
+    object-fit: fill;
 }

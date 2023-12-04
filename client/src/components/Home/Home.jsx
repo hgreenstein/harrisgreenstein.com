@@ -10,6 +10,7 @@ import AlertDismissible from './AlertDismissible';
 import HarrisConducting from '../About/assets/pepBand.jpg';
 import HandleNavigation from '../../handleNavigation.js';
 import TGCSStar from './assets/tgcsStar.png';
+import ReactLogo from '../Projects/assets/reactLogo.svg';
 import useAnimateOnObserve from '../../Custom-Hooks/useAnimateOnObserve.js';
 function Home({ darkMode }) {
     let varaCounter = 0;
@@ -133,7 +134,7 @@ function Home({ darkMode }) {
                                 <div className="home-button-wrapper">
                                     <div className="home-button-background"></div>
                                     <a
-                                        href="#leadership"
+                                        href="#about"
                                         onClick={HandleNavigation}
                                         title=""
                                         className="home-read-button"
@@ -197,7 +198,29 @@ function Home({ darkMode }) {
                                             </p>
                                         </div>
                                     </div>
-                                </div>
+                                <div className="home-latest-picks-list">
+                                        <div className="home-latest-pick-item">
+                                            <img
+                                                className="home-latest-pick-image home-react-logo"
+                                                src={ReactLogo}
+                                                alt=""
+                                            />
+                                            <p className="home-latest-pick-description">
+                                                <a
+                                                    href="#projects"
+                                                    onClick={HandleNavigation}
+                                                    title=""
+                                                >
+                                                    See this website's Github and learn about how I made it
+                                                    <span
+                                                        className="home-latest-pick-span"
+                                                        href="#projects"
+                                                    ></span>
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+</div>
                             </div>
 
                             <div className="home-hero-image">
