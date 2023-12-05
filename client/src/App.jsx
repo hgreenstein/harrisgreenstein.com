@@ -18,7 +18,7 @@ function App() {
         const theme = darkMode ? 'dark' : 'light';
         document.documentElement.setAttribute('data-bs-theme', theme);
     }, [darkMode]);
-    const googleAnalyticsId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
+    const googleAnalyticsId = import.meta.env.VITE_GA_ID;
     if (googleAnalyticsId) {
         ReactGA.initialize(googleAnalyticsId);
         ReactGA.pageview(window.location.pathname + window.location.search);
