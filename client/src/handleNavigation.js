@@ -19,7 +19,6 @@ const handleNavigation = (e, alignToTop = true) => {
             : targetOffset -
               window.innerHeight / 2 +
               targetSection.offsetHeight / 2;
-        console.log(offsetPosition);
 
         window.scrollTo({
             top: offsetPosition,

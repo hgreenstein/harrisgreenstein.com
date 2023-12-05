@@ -37,7 +37,6 @@ function About({ darkMode }) {
         axios
             .get('/api/aboutcards/all')
             .then((response) => {
-                console.log(response);
                 const transformedData = response.data.rows.map((item) => ({
                     superheading: {
                         name: item.superheading_title,
