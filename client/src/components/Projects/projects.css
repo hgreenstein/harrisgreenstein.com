@@ -43,9 +43,7 @@
     .card {
         width: 100% !important;
     }
-    .project-buttons{
-        gap: 25px;
-    }
+  
 }
 @media screen and (min-width: 1024px) {
     .card {
@@ -72,4 +70,5 @@
     display: flex;
     justify-content: space-between;
     margin-top: clamp(2px, 50px, 100px);
+    gap: 3dvw;
 }

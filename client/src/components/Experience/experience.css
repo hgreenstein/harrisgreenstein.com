@@ -71,6 +71,9 @@
     .button-overlay-content > h3 {
         font-size: 2vw;
     }
+    .experience-button {
+        box-shadow: 5px 6px 11px #222;
+    }
 }
 @media screen and (max-width: 1024px) {
     .experience-buttons {
@@ -154,6 +157,7 @@
     margin-block: 10%;
     border: 1px solid black;
     padding: 2% 2%;
+    box-shadow: 5px 7px 9px 0px #222;
 }
 .experience-object-header {
     display: flex;
