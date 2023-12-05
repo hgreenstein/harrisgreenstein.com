@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import GoogleAnalytics from './components/GoogleAnalytics';
 import Home from './components/Home/Home';
 import NavigationBar from './components/NavigationBar';
 import About from './components/About/About';
 import Particles from 'react-particles';
 import { loadSlim } from 'tsparticles-slim';
+import ReactGA from 'react-ga';
 import ArchiveWebsite from './components/Archive/ArchiveWebsite';
 import AboutDev from './components/About/AboutDev';
 import Experience from './components/Experience/Experience';
@@ -18,10 +18,18 @@ function App() {
         const theme = darkMode ? 'dark' : 'light';
         document.documentElement.setAttribute('data-bs-theme', theme);
     }, [darkMode]);
+    const googleAnalyticsId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
+    if (googleAnalyticsId) {
+        ReactGA.initialize(googleAnalyticsId);
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
     return (
         <Router>
-            <GoogleAnalytics />
-            <NavigationBar darkMode={darkMode} setDarkMode={setDarkMode} id ="navbar"/>
+            <NavigationBar
+                darkMode={darkMode}
+                setDarkMode={setDarkMode}
+                id="navbar"
+            />
             <Routes>
                 <Route
                     path="/"
@@ -31,7 +39,7 @@ function App() {
                                 darkMode={darkMode}
                                 setDarkMode={setDarkMode}
                             />{' '}
-                            <About key={darkMode} darkMode={darkMode}/>
+                            <About key={darkMode} darkMode={darkMode} />
                             <Experience />
                             <Projects />
                             <Contact />
@@ -39,11 +47,7 @@ function App() {
                         </div>
                     }
                 />
-                <Route
-                    path='/archive'
-                    element={
-                        <ArchiveWebsite />
-                    } />
+                <Route path="/archive" element={<ArchiveWebsite />} />
             </Routes>
         </Router>
     );
