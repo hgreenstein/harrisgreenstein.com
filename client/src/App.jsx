@@ -20,8 +20,12 @@ function App() {
     }, [darkMode]);
     const googleAnalyticsId = import.meta.env.VITE_GOOGLE_ANALYTICS_ID;
     if (googleAnalyticsId) {
+        console.log("got id");
         ReactGA.initialize(googleAnalyticsId);
         ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+    else{
+        console.log("no id");
     }
     return (
         <Router>
