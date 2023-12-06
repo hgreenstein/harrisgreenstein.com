@@ -56,7 +56,7 @@ function Projects() {
                                     Express serves as the middleware between the
                                     API and the frontend while NGINX quickly
                                     serves the static frontend content and
-                                    serves as a middle-end reserve proxy in the
+                                    serves as a middle-end reverse proxy in the
                                     docker container
                                 </li>
                                 <li>
