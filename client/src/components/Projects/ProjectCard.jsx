@@ -17,13 +17,11 @@ const ProjectCard = ({ imgSrc, title, description, buttons, footerIcons }) => {
             <Card.Img variant="top" src={imgSrc} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
-                <Card.Text>
                     <ul className="experience-inner-list">
                         {description.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
-                </Card.Text>
                 <div className="project-buttons">
                     {buttons.map((button, index) => (
                         <Button key={index} variant="primary" href={button.href} target="_blank">
