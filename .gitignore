@@ -27,3 +27,4 @@ dist-ssr
 client/src/assets/cert/
 client/src/components/Contact/emailCreds.js
 .env
+client/src/components/Contact/ContactCard.jsx
