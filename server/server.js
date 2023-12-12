@@ -25,6 +25,15 @@ pgClient.on("connect", client =>{
 
 app.use(express.json());
 
+// set up rate limiter: maximum of five requests per minute
+const RateLimit = require('express-rate-limit');
+const limiter = RateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // max 100 requests per windowMs
+});
+
+app.use(limiter);
+
 //Setup Postgres API Endpoint
 
 app.get('/api', (req, res) => {
