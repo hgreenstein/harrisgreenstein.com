@@ -1,4 +1,4 @@
-# harrisgreenstein.com
+# [harrisgreenstein.com](https://harrisgreenstein.com)
 Full stack portfolio website created by Harris Greenstein using: PERN full stack (PostgreSQL, Express, React, Node.js) + Docker, NGINX and HTML/CSS/JavaScript
 
 ## Introduction
