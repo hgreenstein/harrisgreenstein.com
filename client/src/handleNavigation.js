@@ -1,24 +1,29 @@
 const handleNavigation = (e, alignToTop = true) => {
     e.preventDefault();
     const targetId = e.target.getAttribute('href').slice(1);
+    const currentPath = window.location.pathname;
+
+    if (currentPath !== '/') {
+        // Update the URL with the hash of the target section
+        window.location.href = '/#' + targetId;
+    } else {
+        // If already on the root, update only the hash
+        window.location.hash = targetId;
+        // Scroll immediately to the target section
+        scrollToTarget(targetId, alignToTop);
+    }
+};
+
+const scrollToTarget = (targetId, alignToTop) => {
     const targetSection = document.getElementById(targetId);
 
     if (targetSection) {
-        // Get the top position of the target section
-        const targetOffset =
-            targetSection.getBoundingClientRect().top + window.scrollY;
-
-        // Select the navbar element and get its current height
+        const targetOffset = targetSection.getBoundingClientRect().top + window.scrollY;
         const navbar = document.querySelector('.navbar');
-
         const navbarHeight = navbar.offsetHeight;
-
-        // Adjust the offset position by deducting the navbar's height
         const offsetPosition = alignToTop
             ? targetOffset - navbarHeight
-            : targetOffset -
-              window.innerHeight / 2 +
-              targetSection.offsetHeight / 2;
+            : targetOffset - window.innerHeight / 2 + targetSection.offsetHeight / 2;
 
         window.scrollTo({
             top: offsetPosition,
@@ -27,4 +32,14 @@ const handleNavigation = (e, alignToTop = true) => {
     }
 };
 
+// Global function to handle scrolling on page load
+window.onload = () => {
+    const hash = window.location.hash.slice(1);
+    document.querySelector('.ring').style.display = 'none';
+    if (hash) {
+        scrollToTarget(hash, true);
+    }
+};
+
 export default handleNavigation;
+
