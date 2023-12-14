@@ -1,6 +1,4 @@
 import React from 'react';
-import Markdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import './blog.scss';
 import SpecialGrid from './assets/special-grid.jpg';
 import TestGraph from './assets/average_test_scores_by_age.png';
