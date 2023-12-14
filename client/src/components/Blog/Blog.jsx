@@ -89,7 +89,7 @@ function Blog() {
             >
                 I propose a new way of combining natural language and code-like
                 words and syntax called “//py” mode to work in conjunction with{' '}
-                <a href="https://www.novaspivack.com/technology/nova-mode-the-ultimate-chatgpt-custom-instruction">
+                <a href="https://www.novaspivack.com/technology/nova-mode-the-ultimate-chatgpt-custom-instruction" target="_blank" rel="noopener noreferrer">
                     Nova Mode
                 </a>
                 . It utilizes a software engineer’s existing skills translating
@@ -147,7 +147,7 @@ function Blog() {
                 data-line-end="21"
             >
                 This concept finds its parallel in the world of{' '}
-                <a href="https://en.wikipedia.org/wiki/Pseudocode">
+                <a href="https://en.wikipedia.org/wiki/Pseudocode" target="_blank" rel="noopener noreferrer">
                     pseudo code
                 </a>
                 . Here, we abandon strict syntax in favor of a more
@@ -171,7 +171,7 @@ function Blog() {
                 data-line-end="25"
             >
                 I was recently introduced to{' '}
-                <a href="https://www.novaspivack.com/technology/nova-mode-the-ultimate-chatgpt-custom-instruction">
+                <a href="https://www.novaspivack.com/technology/nova-mode-the-ultimate-chatgpt-custom-instruction" target="_blank" rel="noopener noreferrer">
                     Nova Mode: The Ultimate ChatGPT Custom Instruction
                 </a>
                 . This custom instruction set takes ChatGPT to another level,
@@ -304,7 +304,7 @@ function Blog() {
                 with <code>//! ([command to loop], [times to loop])</code>,
                 nearly equips us with the full range of functionalities
                 necessary for{' '}
-                <a href="https://en.wikipedia.org/wiki/Turing_completeness">
+                <a href="https://en.wikipedia.org/wiki/Turing_completeness" target="_blank" rel="noopener noreferrer">
                     Turing-complete communication
                 </a>
                 , the metric that declares a machine has the ability to do
@@ -355,7 +355,7 @@ function Blog() {
                 Conversely, for algorithmic challenges and data structures, I
                 typically turn to Java, valuing its type safety and the nuanced
                 optimizations I’ve mastered not just for theoretical{' '}
-                <a href="https://en.wikipedia.org/wiki/Time_complexity">
+                <a href="https://en.wikipedia.org/wiki/Time_complexity" target="_blank" rel="noopener noreferrer">
                     algorithmic time complexity
                 </a>
                 , but for optimal real-world performance. The process unfolded
@@ -416,7 +416,7 @@ function Blog() {
                         operators, such as multiplication (<code>//* x y</code>)
                         and greater-than-or-equal-to comparisons (
                         <code>//&gt;= x y</code>) in a{' '}
-                        <a href="https://en.wikipedia.org/wiki/Lambda_calculus">
+                        <a href="https://en.wikipedia.org/wiki/Lambda_calculus" target="_blank" rel="noopener noreferrer">
                             lambda calculus
                         </a>{' '}
                         style notation. This allowed for the use of concise,
@@ -474,27 +474,27 @@ function Blog() {
                 id="footerLink2"
             >
                 In testing “//py” mode, I chose two distinct challenges from{' '}
-                <a href="https://leetcode.com/">LeetCode</a> - the{' '}
-                <a href="https://leetcode.com/problems/two-sum/description/">
+                <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer">LeetCode</a> - the{' '}
+                <a href="https://leetcode.com/problems/two-sum/description/" target="_blank" rel="noopener noreferrer">
                     “Two Sum”
                 </a>{' '}
                 problem and the{' '}
-                <a href="https://leetcode.com/problems/unique-paths/description">
+                <a href="https://leetcode.com/problems/unique-paths/description" target="_blank" rel="noopener noreferrer">
                     “Unique Paths”
                 </a>{' '}
                 problem. These problems were selected to evaluate “//py” mode’s
                 ability to interpret and solve varying levels of algorithmic
                 complexity using natural language inputs. For those interested
                 in learning more, full solutions to{' '}
-                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/1.Two-Sum/Solution.md">
+                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/1.Two-Sum/Solution.md" target="_blank" rel="noopener noreferrer">
                     “Two Sum”
                 </a>{' '}
                 and{' '}
-                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/62.Unique-Paths/Solution.md">
+                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/62.Unique-Paths/Solution.md" target="_blank" rel="noopener noreferrer">
                     “Unique Paths”
                 </a>{' '}
                 are available on my{' '}
-                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/tree/main">
+                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/tree/main" target="_blank" rel="noopener noreferrer">
                     GitHub
                 </a>
                 .
@@ -591,7 +591,7 @@ function Blog() {
             >
                 After testing “//py” mode on familiar problems, I turned to a
                 new challenge: the daily LeetCode problem for 12/13/2023 -{' '}
-                <a href="https://leetcode.com/problems/special-positions-in-a-binary-matrix">
+                <a href="https://leetcode.com/problems/special-positions-in-a-binary-matrix" target="_blank" rel="noopener noreferrer">
                     “Special Positions in a Binary Matrix”
                 </a>
                 .
@@ -651,7 +651,7 @@ function Blog() {
                 to bridge the gap between a coder’s conceptual thinking and
                 practical code execution. For those interested in a full written
                 solution to this problem, it can again be viewed on my{' '}
-                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/1582.Special-Positions-in-a-Binary-Matrix/Solution.md">
+                <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/1582.Special-Positions-in-a-Binary-Matrix/Solution.md" target="_blank" rel="noopener noreferrer">
                     GitHub here.
                 </a>
             </p>
@@ -720,7 +720,7 @@ function Blog() {
             >
                 I then prompted it with a few functions. It’s been a while since
                 I’ve specifically used{' '}
-                <a href="https://matplotlib.org/">Matplotlib</a> so I just
+                <a href="https://matplotlib.org/" target="_blank" rel="noopener noreferrer">Matplotlib</a> so I just
                 addressed it the same way I would address making any graph. I
                 knew I wanted some x data: the student age, and some y data: the
                 average test score of the student, and I wanted a line of best
