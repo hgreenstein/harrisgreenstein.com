@@ -619,7 +619,7 @@ function Blog() {
                 My process began with forming the pseudo code in my mind. This
                 intuitive understanding of the problem seamlessly translated
                 into “//py” mode commands. Remarkably, the code not only ran
-                correctly on the first try but also ranked in the top 77% of
+                correctly on the first try but also ranked in the top quartile of
                 solutions. This efficiency highlights “//py” mode’s ability to
                 bridge the gap between a coder’s conceptual thinking and
                 practical code execution. For those interested in a full written
