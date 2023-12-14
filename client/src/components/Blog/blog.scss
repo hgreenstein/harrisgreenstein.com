@@ -1,4 +1,17 @@
-.blog-container {
+@media screen and (min-width: 1024px){
+    .blog-graph{
+        max-width: 40dvw !important;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1024px){
+    .blog-graph{
+        max-width: 55dvw !important;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 700px){
+    .blog-graph{
+        max-width: 70dvw;
+    }
 }
 @media screen and (min-width: 500px) {
     .blog-container {
@@ -10,6 +23,9 @@
     .blog-container {
         margin-top: 150px;
         margin-inline: 10dvw;
+    }
+    .blog-graph{
+        max-width: 85dvw !important;
     }
 }
 .blog-container {
