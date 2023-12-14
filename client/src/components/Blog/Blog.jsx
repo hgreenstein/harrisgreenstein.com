@@ -1090,6 +1090,17 @@ function Blog() {
                 <a id="can_be_inputted_together_193"></a>(can be inputted
                 together)
             </h4>
+            
+            <p>
+            <strong>Please note, the following prompts will only work correctly if you have already set up {' '}
+                <a
+                    href="https://www.novaspivack.com/technology/nova-mode-the-ultimate-chatgpt-custom-instruction"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Nova Mode
+                </a></strong>
+            </p>
             <h5>
                 <a href="/blog#footerLink1">
                     Return to the linked part of the article
