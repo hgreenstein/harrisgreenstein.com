@@ -12,7 +12,7 @@ import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/footer';
-import ContactCard from './components/Contact/ContactCard.jsx';
+import Blog from './components/Blog/Blog.jsx';
 function App() {
     const [darkMode, setDarkMode] = useState(false);
     useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
                                 darkMode={darkMode}
                                 setDarkMode={setDarkMode}
                             />{' '}
-                            <About key={darkMode} darkMode={darkMode} />
+                            <AboutDev key={darkMode} darkMode={darkMode} />
                             <Experience />
                             <Projects />
                             <Contact />
@@ -44,7 +44,7 @@ function App() {
                     }
                 />
                 <Route path="/archive" element={<ArchiveWebsite />} />
-                <Route path="/contactcard" element={<ContactCard />} />
+                <Route path="/blog" element={<Blog />} />
             </Routes>
         </Router>
     );
