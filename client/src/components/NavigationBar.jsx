@@ -107,6 +107,17 @@ function NavigationBar({ darkMode, setDarkMode }) {
                                 >
                                     Contact
                                 </Nav.Link>
+                                 <Nav.Link
+                                    href="/blog"
+                                    onClick={HandleNavigation}
+                                    className={
+                                        darkMode
+                                            ? 'navbar-collapse-item-dark text-light'
+                                            : 'navbar-collapse-item-light text-dark'
+                                    }
+                                >
+                                    Blog
+                                </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Nav>
