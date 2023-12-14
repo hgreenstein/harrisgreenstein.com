@@ -2183,14 +2183,14 @@
 
     a {
         cursor: pointer;
-        color: #0066cc;
+        color: var(--bs-link-color);
         text-decoration: none;
     }
 
     a:hover,
     a:focus {
         border-bottom-color: #0066cc;
-        color: #dff9f4;
+        color: var(--bs-link-hover-color);
     }
 
     img {
@@ -2781,7 +2781,7 @@
     }
 
     .menu a:hover {
-        color: #0066cc;
+        color: var(--bs-link-color);
     }
 
     .menu .menu-item {
