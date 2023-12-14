@@ -822,7 +822,7 @@ function Blog() {
                 data-line-end="128"
             >
                 The first step comes from pasting in the three prompts I formed
-                to define “//py” mode found in the <a href="#1.">footer</a>.
+                to define “//py” mode found in the <a href="/blog#1_191">footer</a>.
                 This process has been tested to be repeatable in recreating the
                 conditions to use “//py” mode in ChatGPT.
             </p>
