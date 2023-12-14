@@ -625,7 +625,7 @@ function Blog() {
                 practical code execution. For those interested in a full written
                 solution to this problem, it can again be viewed on my{' '}
                 <a href="https://github.com/hgreenstein/LeetCode-Explanations-and-Solutions/blob/main/1582.Special-Positions-in-a-Binary-Matrix/Solution.md">
-                    GitHub
+                    GitHub here.
                 </a>
             </p>
             <p
