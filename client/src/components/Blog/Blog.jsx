@@ -16,6 +16,9 @@ function Blog() {
                 Nova Mode + Code Interpreter: The Future of Natural Language
                 Coding
             </h5>
+            <h6 style={{textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
+            By: Harris Greenstein
+            </h6>
             <br />
           
 
