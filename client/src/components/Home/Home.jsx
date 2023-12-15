@@ -11,6 +11,7 @@ import HarrisConducting from '../About/assets/pepBand.jpg';
 import HandleNavigation from '../../handleNavigation.js';
 import TGCSStar from './assets/tgcsStar.png';
 import ReactLogo from '../Projects/assets/reactLogo.svg';
+import AiLogo from './assets/aiLogo.png';
 import useAnimateOnObserve from '../../Custom-Hooks/useAnimateOnObserve.js';
 function Home({ darkMode }) {
     let varaCounter = 0;
@@ -160,7 +161,7 @@ function Home({ darkMode }) {
                                             <p className="home-latest-pick-description">
                                                 <a
                                                     href="#background-container"
-                                                    title=""
+                                                    title="Gifted Child Society Star"
                                                     onClick={HandleNavigation}
                                                 >
                                                     Find out about my exciting
@@ -178,18 +179,15 @@ function Home({ darkMode }) {
                                         <div className="home-latest-pick-item">
                                             <img
                                                 className="home-latest-pick-image"
-                                                src={HarrisConducting}
-                                                alt=""
+                                                src={AiLogo}
+                                                alt="Natural Language Programming"
                                             />
                                             <p className="home-latest-pick-description">
                                                 <a
-                                                    href="#leadership"
-                                                    onClick={HandleNavigation}
+                                                    href="/blog/how_will_coders_co_program_with_ai"
                                                     title=""
                                                 >
-                                                    Learn about my time as
-                                                    conductor of the Big Red Pep
-                                                    Band!
+                                                   Read the latest blog article about natural language programming!
                                                     <span
                                                         className="home-latest-pick-span"
                                                         href="#leadership"
