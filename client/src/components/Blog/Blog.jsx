@@ -6,6 +6,7 @@ import OutputComparison from './assets/Output Comparison Nova Mode.png';
 import CoverPhoto from './assets/dalleCoverPhoto.png';
 import { DiscussionEmbed } from 'disqus-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Helmet } from 'react-helmet';
 import {
     faFacebookF,
     faTwitter,
@@ -28,6 +29,25 @@ function Blog() {
 
     return (
         <section id="blog" className="blog-container">
+            <Helmet>
+                <title>Harris Greenstein's Blog</title>
+                <meta property="og:title" content="How Will Coders Co-Program With A.I.?" />
+                <meta
+                    property="og:description"
+                    content="This article explores the future of programming alongside A.I.,
+                emphasizing a collaborative approach where coders and artificial
+                intelligence systems enhance each other's capabilities. It
+                introduces the innovative “//py” mode, designed for seamless
+                integration of natural language and coding, and discusses the
+                transformative impact of Nova Mode on ChatGPT's functionality.
+                The piece highlights how these advancements will enable
+                programmers to express complex coding logic in simpler terms,
+                revolutionizing the way we interact with coding languages.
+"
+                />
+                <meta property="og:image" content={CoverPhoto} />
+                <meta property="og:url" content="https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai" />
+            </Helmet>
             <h1
                 className="code-line"
                 data-line-start="0"
@@ -1116,7 +1136,7 @@ function Blog() {
                     <FontAwesomeIcon icon={faLink} />
                 </button>
             </div>
-            <br/>
+            <br />
             <h4 className="code-line" data-line-start="107" data-line-end="108">
                 <a id="Graphing_with_Natural_Language_Data_A_Creative_Exploration_with_py_Mode_107"></a>
                 About The Author:
