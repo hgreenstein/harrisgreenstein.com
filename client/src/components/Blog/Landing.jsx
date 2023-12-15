@@ -14,7 +14,7 @@ function Landing() {
     return (
         <section id="landing">
             <h1 className="blog-title">
-                Blog
+                Articles
             </h1>
             {articles.map((article, index) => (
                 <BlogArticleItem

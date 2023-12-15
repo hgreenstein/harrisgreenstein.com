@@ -1,6 +1,6 @@
 @media screen and (min-width: 1300px){
     .blog-article-content{
-        max-width: 55dvw;
+        max-width: min(55dvw, 1000px);
     }
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px){
