@@ -92,7 +92,6 @@ function Blog() {
                 revolutionizing the way we interact with coding languages.
             </em>
             <br />
-            max-width: min(55dvw, 1000px);
             <br />
             <figure style={{ display: 'flex', flexDirection: 'column' }}>
                 <img
