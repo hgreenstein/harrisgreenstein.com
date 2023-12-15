@@ -1111,7 +1111,7 @@ function Blog() {
                     <FontAwesomeIcon icon={faFacebookF} />
                 </a>
                 <a
-                    href="https://twitter.com/intent/tweet?url=https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai&text=YOUR_TEXT"
+                    href="https://twitter.com/intent/tweet?url=https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai&text=Check_out_Harris_Greenstein's_latest_blog_post_about_using_chat_gpt_to_program_with_natural_language"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
