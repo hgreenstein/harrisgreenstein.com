@@ -64,8 +64,8 @@ function Blog() {
                 data-line-end="1"
                 style={{ textAlign: 'center' }}
             >
-                <a id="How_will_coders_coprogram_with_AI_0"></a>How will coders
-                co-program with A.I.?
+                <a id="How_will_coders_coprogram_with_AI_0"></a>How Will Coders
+                Co-Program With A.I.?
             </h1>
             <h5
                 className="has-line-data"
