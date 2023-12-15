@@ -47,6 +47,16 @@ function Blog() {
                 />
                 <meta property="og:image" content={CoverPhoto} />
                 <meta property="og:url" content="https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai" />
+                <meta name="description" content="This article explores the future of programming alongside A.I.,
+                emphasizing a collaborative approach where coders and artificial
+                intelligence systems enhance each other's capabilities. It
+                introduces the innovative “//py” mode, designed for seamless
+                integration of natural language and coding, and discusses the
+                transformative impact of Nova Mode on ChatGPT's functionality.
+                The piece highlights how these advancements will enable
+                programmers to express complex coding logic in simpler terms,
+                revolutionizing the way we interact with coding languages.
+" />
             </Helmet>
             <h1
                 className="code-line"
@@ -1110,7 +1120,7 @@ function Blog() {
                     <FontAwesomeIcon icon={faFacebookF} />
                 </a>
                 <a
-                    href="https://twitter.com/intent/tweet?url=https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai&text=Check_out_Harris_Greenstein's_latest_blog_post_about_using_chat_gpt_to_program_with_natural_language"
+                    href="https://twitter.com/intent/tweet?url=https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai&text=Check out Harris Greenstein's latest blog post about using chat gpt to program with natural language"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -1124,7 +1134,7 @@ function Blog() {
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
                 <a
-                    href="mailto:?subject=Check out this blog post&body=Check out this blog post at https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai"
+                    href="mailto:?subject=How Will Coders Co-program with A.I.?&body=Check out this blog post by Harris Greenstein at https://harrisgreenstein.com/blog/how_will_coders_co_program_with_ai"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
