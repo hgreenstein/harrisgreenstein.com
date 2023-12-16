@@ -628,12 +628,11 @@ function Blog() {
                             View the “//py” mode input for “Two Sum”
                         </a>
                         . I only implemented the brute force approach as this
-                        was my first test and I wanted to just try the basics, I
+                        was my first test and I wanted to just try the basics. I
                         leave the optimized approach as a challenge to the
                         reader at home.
                     </p>
                 </li>{' '}
-                max-width: min(55dvw, 1000px);
                 <li
                     className="has-line-data"
                     data-line-start="82"
