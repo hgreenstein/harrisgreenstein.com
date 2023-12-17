@@ -522,7 +522,7 @@ function Blog() {
                 data-line-end="68"
             >
                 For a detailed look at the specific inputs used to define “//py”
-                mode, <a href="/blog#1_191">click here</a>.
+                mode, <a href="/blog/how_will_coders_co_program_with_ai#1_191">click here</a>.
             </p>
             <h3 className="code-line" data-line-start="69" data-line-end="70">
                 <a id="Testing_py_mode_69"></a>Testing “//py” mode
@@ -624,7 +624,7 @@ function Blog() {
                         Sum” being a widely known problem, the AI adhered
                         strictly to my instructions, showcasing its capacity to
                         interpret and execute my unique “//py” mode syntax.{' '}
-                        <a href="/blog#2_208">
+                        <a href="/blog/how_will_coders_co_program_with_ai#2_208">
                             View the “//py” mode input for “Two Sum”
                         </a>
                         . I only implemented the brute force approach as this
@@ -656,7 +656,7 @@ function Blog() {
                         into Python code highlighted “//py” mode’s
                         language-agnostic nature and its ability to adapt to
                         different programming styles.{' '}
-                        <a href="/blog#3_248">
+                        <a href="/blog/how_will_coders_co_program_with_ai#3_248">
                             View the “//py” mode input for “Unique Paths”
                         </a>
                         .
@@ -765,6 +765,7 @@ function Blog() {
                 className="has-line-data"
                 data-line-start="103"
                 data-line-end="104"
+                id="footerLink4"
             >
                 My process began with forming the pseudo code in my mind. This
                 intuitive understanding of the problem seamlessly translated
@@ -788,7 +789,7 @@ function Blog() {
                 data-line-end="106"
             >
                 The optimization’s success was largely due to the logical
-                framework of the input, <a href="/blog#4_292">available here</a>
+                framework of the input, <a href="/blog/how_will_coders_co_program_with_ai#4_292">available here</a>
                 , which is a testament to one of “//py” mode’s key strengths. It
                 empowers you, the programmer, to apply years of coding expertise
                 in crafting efficient, robust solutions with fewer
@@ -874,7 +875,7 @@ function Blog() {
             >
                 The first step comes from pasting in the three prompts I formed
                 to define “//py” mode found in the{' '}
-                <a href="/blog#1_191">footer</a>. This process has been tested
+                <a href="/blog/how_will_coders_co_program_with_ai#1_191">footer</a>. This process has been tested
                 to be repeatable in recreating the conditions to use “//py” mode
                 in ChatGPT.
             </p>
@@ -1206,7 +1207,7 @@ function Blog() {
                 </strong>
             </p>
             <h5>
-                <a href="/blog#footerLink1">
+                <a href="/blog/how_will_coders_co_program_with_ai#footerLink1">
                     Return to the linked part of the article
                 </a>
             </h5>
@@ -1276,7 +1277,7 @@ function Blog() {
                 <a id="Two_Sum_py_mode_input_210"></a>Two Sum “//py” mode input:
             </h2>
             <h5>
-                <a href="/blog#footerLink2">
+                <a href="/blog/how_will_coders_co_program_with_ai#footerLink2">
                     Return to the linked part of the article
                 </a>
             </h5>
@@ -1388,7 +1389,7 @@ function Blog() {
                 mode input:
             </h2>
             <h5>
-                <a href="/blog#footerLink3">
+                <a href="/blog/how_will_coders_co_program_with_ai#footerLink3">
                     Return to the linked part of the article
                 </a>
             </h5>
@@ -1495,7 +1496,7 @@ function Blog() {
                 Special Positions in a Binary Matrix “//py” mode input:
             </h2>
             <h5>
-                <a href="/blog#footerLink4">
+                <a href="/blog/how_will_coders_co_program_with_ai#footerLink4">
                     Return to the linked part of the article
                 </a>
             </h5>
