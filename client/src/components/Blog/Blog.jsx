@@ -1444,47 +1444,69 @@ function Blog() {
             </h2>
             <pre>
                 <code
-                    className="has-line-data"
-                    data-line-start="252"
-                    data-line-end="268"
+                    class="has-line-data language-python"
+                    data-line-start="272"
+                    data-line-end="291"
                 >
-                    //py &#123;
+                    <span class="hljs-function">
+                        <span class="hljs-keyword">def </span>
+                        <span class="hljs-title">traverseGraph</span>
+                        <span class="hljs-params">(length, width)</span>:
+                    </span>
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;//f traverseGraph length width:
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-comment"># Initialize the grid</span>
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define
-                    grid (2d array of length and width equal to params)
+                    &nbsp;&nbsp;&nbsp;&nbsp;grid = [
+                    <span class="hljs-number">0</span>{' '}
+                    <span class="hljs-keyword">for</span> _{' '}
+                    <span class="hljs-keyword">in</span> range(width)]{' '}
+                    <span class="hljs-keyword">for</span> _{' '}
+                    <span class="hljs-keyword">in</span> range(length)]
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define
-                    grid(0, 0) 1<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//! (<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//!(
+                    &nbsp;&nbsp;&nbsp;&nbsp;grid[
+                    <span class="hljs-number">0</span>][
+                    <span class="hljs-number">0</span>] ={' '}
+                    <span class="hljs-number">1</span>
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//if
-                    //&gt;= (//- (current length) (1)) 0 then
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-comment"># Populate the grid</span>
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define
-                    grid (current length, current width) (grid(//- current
-                    length, 1), current width)
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-keyword">for</span> i{' '}
+                    <span class="hljs-keyword">in</span> range(length):
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//if
-                    //&gt;= (//- (current width) (1)) 0 then
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-keyword">for</span> j{' '}
+                    <span class="hljs-keyword">in</span> range(width):
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//define
-                    grid (current length, current width) (grid(current length,
-                    (//- current width, 1)))
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-keyword">if</span> i >{' '}
+                    <span class="hljs-number">0</span>:
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),width
-                    (iterator current width))
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid[i][j]
+                    += grid[i - <span class="hljs-number">1</span>][j]
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),length
-                    (iterator current length))
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-keyword">if</span> j >{' '}
+                    <span class="hljs-number">0</span>:
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RETURN
-                    grid((//- length, 1), (//- width, 1))
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grid[i][j]
+                    += grid[i][j - <span class="hljs-number">1</span>]
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;//traverseGraph 5 8<br />
-                    &#125;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-keyword">return</span> grid[length -{' '}
+                    <span class="hljs-number">1</span>][width -{' '}
+                    <span class="hljs-number">1</span>]
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="hljs-comment">
+                        # Test the function with the provided dimensions
+                    </span>
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;traverseGraph(
+                    <span class="hljs-number">5</span>,{' '}
+                    <span class="hljs-number">8</span>)
                     <br />
                 </code>
             </pre>
