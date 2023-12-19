@@ -34,7 +34,7 @@ function Projects() {
             description: [
                 "This second iteration of harrisgreenstein.com evolved from using only bare HTML/CSS/JS to full stack development mainly utilizing the PERN stack for language consistency",
                 " The front - end is mainly React.JS utilizing hooks, components, and libraries while the backend is served via a NodeJs server servering as a Restful API for a PostgreSQL database",
-                "Express serves as the middleware between the API and the frontend while NGINX quickly serves the static frontend content and serves as a middle-end reverse proxy in the docker container",
+                "Express.js is utilized as the server-side framework to handle API requests while NGINX quickly serves the static frontend content and serves as a middle-end reverse proxy in the docker container",
                 "The entire application is dockerized for easy and consistent deployment on different linux host servers and local development",
             ],
             buttons: [
